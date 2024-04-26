@@ -1,0 +1,26 @@
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f8f8; /* Replace with the actual color from your design */
+  }
+  
+  .hero h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    /* Add the font-family as per your design */
+  }
+  
+  .hero p {
+    margin-bottom: 20px;
+    color: #333; /* Replace with the actual color from your design */
+    /* Add the font-family as per your design */
+  }
+  
+  .hero button {
+    background-color: #0062cc; /* Replace with the actual color from your design */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    /* Add the font-family as per your design */
+  }
