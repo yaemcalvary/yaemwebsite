@@ -1,0 +1,53 @@
+.unsplashgpcodheuwn0-icon {
+  height: 357px;
+  width: 515px;
+  position: relative;
+  border-radius: var(--br-14xl);
+  object-fit: cover;
+  display: none;
+  max-width: 100%;
+}
+.resources4 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  z-index: 1;
+}
+.unsplashgpcodheuwn0-parent {
+  height: 357px;
+  width: 515px;
+  border-radius: var(--br-14xl);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-17xl) var(--padding-134xl);
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+  max-width: 114%;
+  text-align: left;
+  font-size: var(--card-title-size);
+  color: var(--color-black);
+  font-family: var(--card-title);
+}
+@media screen and (max-width: 1050px) {
+  .resources4 {
+    font-size: var(--font-size-7xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .resources4 {
+    font-size: var(--font-size-lgi);
+  }
+  .unsplashgpcodheuwn0-parent {
+    padding-left: var(--padding-57xl);
+    padding-right: var(--padding-57xl);
+    box-sizing: border-box;
+  }
+}
