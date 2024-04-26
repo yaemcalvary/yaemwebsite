@@ -1,0 +1,118 @@
+.screenshot-2024-04-23-at-3593 {
+  height: 56px;
+  width: 88px;
+  position: relative;
+  object-fit: cover;
+}
+.calvary-yaem4 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.image-container,
+.screenshot-2024-04-23-at-359-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) 0 0;
+}
+.screenshot-2024-04-23-at-359-container {
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 var(--padding-xs) 0 0;
+  gap: var(--gap-5xs);
+}
+.home2 {
+  position: relative;
+  display: inline-block;
+  min-width: 52px;
+}
+.about2,
+.community2,
+.give2,
+.resources5 {
+  position: relative;
+  display: inline-block;
+  min-width: 53px;
+}
+.community2,
+.give2,
+.resources5 {
+  min-width: 100px;
+}
+.give2,
+.resources5 {
+  min-width: 87px;
+}
+.give2 {
+  min-width: 39px;
+}
+.home-group {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-lustria);
+}
+.bottom-bar2,
+.nav-bar3 {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.bottom-bar2 {
+  margin: 0;
+  width: 595px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-smi);
+}
+.nav-bar3 {
+  width: 1427px;
+  background-color: var(--color-gray-200);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-5xl) var(--padding-80xl) var(--padding-7xl)
+    var(--padding-17xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--card-title-size);
+  color: var(--color-black);
+  font-family: var(--card-title);
+}
+@media screen and (max-width: 1200px) {
+  .nav-bar3 {
+    padding-right: var(--padding-30xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .bottom-bar2 {
+    display: none;
+  }
+  .nav-bar3 {
+    width: 832px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .nav-bar3 {
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
