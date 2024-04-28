@@ -1,0 +1,117 @@
+.yaem-logo-image {
+  height: 56px;
+  width: 88px;
+  position: relative;
+  object-fit: cover;
+}
+.calvary-yaem {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.calvary-yaem-wrapper,
+.yaem-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) 0 0;
+}
+.yaem-logo {
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 var(--padding-xs) 0 0;
+  gap: var(--gap-5xs);
+}
+.about,
+.community,
+.give,
+.home,
+.resources {
+  position: relative;
+  display: inline-block;
+  min-width: 52px;
+}
+.about,
+.community,
+.give,
+.resources {
+  min-width: 53px;
+}
+.community,
+.give,
+.resources {
+  min-width: 100px;
+}
+.give,
+.resources {
+  min-width: 87px;
+}
+.give {
+  min-width: 39px;
+}
+.nav {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-lustria);
+}
+.nav-bar,
+.nav-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.nav-wrapper {
+  margin: 0;
+  width: 595px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-smi);
+}
+.nav-bar {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-5xl) var(--padding-93xl) var(--padding-5xl)
+    var(--padding-17xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--card-title-size);
+  color: var(--color-black);
+  font-family: var(--card-title);
+}
+@media screen and (max-width: 1050px) {
+  .nav-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .nav-bar {
+    padding-right: var(--padding-37xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nav-bar {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
