@@ -1,4 +1,4 @@
-import "./NavBar2.css";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
@@ -8,7 +8,7 @@ const NavBar = () => {
           className="logo-image-icon"
           loading="lazy"
           alt=""
-          src="/screenshot-20240423-at-359-11@2x.png"
+          src="/yaemlogo.png"
         />
         <div className="calvary-yaem-wrapper1">
           <h2 className="calvary-yaem6">Calvary YAEM</h2>

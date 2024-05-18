@@ -1,4 +1,4 @@
-import "./BottomBar1.css";
+import "./BottomBar.css";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
           <img
             className="screenshot-2024-04-23-at-3596"
             alt=""
-            src="/screenshot-20240423-at-359-11@2x.png"
+            src="/yaemlogo.png"
           />
           <div className="calvary-yaem-wrapper2">
             <h2 className="calvary-yaem7">Calvary YAEM</h2>
