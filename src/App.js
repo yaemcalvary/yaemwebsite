@@ -5,7 +5,10 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import Home from "./pages/Home";
+import Desktop1 from "./pages/Desktop1";
+import Footer1 from "./pages/Footer";
+import Desktop from "./pages/Desktop";
 
 function App() {
   const action = useNavigationType();
@@ -27,6 +30,18 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/desktop-1":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/footer":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/desktop-11":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -45,7 +60,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/desktop-1" element={<Desktop1 />} />
+      <Route path="/footer" element={<Footer1 />} />
+      <Route path="/desktop-11" element={<Desktop />} />
     </Routes>
   );
 }

@@ -1,21 +1,21 @@
 import NavBar from "../components/NavBar";
-import GetToKnowUsFrame from "../components/GetToKnowUsFrame";
-import NewHereFrame from "../components/NewHereFrame";
-import ERCFrame from "../components/ERCFrame";
+import GetToKnow from "../components/GetToKnow";
+import NewHere from "../components/NewHere";
+import FooterLinks from "../components/FooterLinks";
 import BottomBar from "../components/BottomBar";
-import "./HomePage.css";
+import "./Home.css";
 
-const HomePage = () => {
+const Home = () => {
   return (
-    <div className="home-page">
+    <div className="home">
       <NavBar />
-      <section className="hero-wrapper">
-        <div className="hero">
+      <section className="hero">
+        <div className="hero-section">
           <img
-            className="church-image-icon"
+            className="unsplashnsn5labyy-m-icon"
             loading="lazy"
             alt=""
-            src="/church-image.png"
+            src="/unsplashnsn5labyym@2x.png"
           />
           <h1 className="welcome-to-calvary">Welcome to Calvary YAEM!</h1>
           <div className="we-love-god-container">
@@ -25,17 +25,17 @@ const HomePage = () => {
               love those who are around us.
             </p>
           </div>
-          <button className="service-button">
-            <b className="service-info">Service info</b>
+          <button className="service">
+            <div className="service-info">Service info</div>
           </button>
         </div>
       </section>
-      <GetToKnowUsFrame />
-      <NewHereFrame />
-      <ERCFrame />
+      <GetToKnow />
+      <NewHere />
+      <FooterLinks />
       <BottomBar />
     </div>
   );
 };
 
-export default HomePage;
+export default Home;

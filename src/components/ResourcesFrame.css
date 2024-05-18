@@ -1,0 +1,12 @@
+.resources-image-icon {
+  height: 357px;
+  width: 515px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-14xl);
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 0;
+}

@@ -1,112 +1,126 @@
-.new-here-let {
+.new-here-let1 {
   margin: 0;
   position: relative;
   font-size: inherit;
   font-weight: 600;
   font-family: inherit;
 }
-.new-here-let-us-know-wrapper {
+.new-here-wrapper {
   align-self: stretch;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 var(--padding-xl) 0 var(--padding-2xl);
+  padding: 0 var(--padding-xl) 0 var(--padding-19xl);
 }
-.we-are-looking {
+.we-are-looking1 {
   margin: 0;
 }
-.we-are-looking-container {
+.we-are-looking-container1 {
   align-self: stretch;
   position: relative;
-  font-size: var(--font-size-lg);
+  font-size: var(--body-text-lora-size);
   font-family: var(--font-sf-pro-text);
   text-align: center;
 }
-.frame-container {
+.new-here-wrapper-parent {
   width: 528px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-lg);
+  gap: var(--gap-mid);
   max-width: 100%;
 }
-.plan-a-visit {
+.plan-a-visit1 {
   position: relative;
   font-size: var(--button-text-size);
-  text-transform: uppercase;
-  display: inline-block;
-  font-family: var(--card-title);
+  text-transform: capitalize;
+  font-family: var(--button-text);
   color: var(--color-dimgray);
   text-align: left;
-  min-width: 126px;
+  display: inline-block;
+  min-width: 120px;
 }
-.form-enter-info,
-.plan-visit-button {
+.plan-visit-wrapper,
+.plan-visit1 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
-.plan-visit-button {
+.plan-visit-wrapper {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-mini) var(--padding-58xl);
-  background-color: var(--color-gainsboro-200);
+  padding: var(--padding-mini) var(--padding-58xl) var(--padding-sm);
+  background-color: var(--color-honeydew);
+  width: 280px;
   border-radius: var(--br-13xl);
   overflow: hidden;
+  flex-shrink: 0;
   justify-content: flex-start;
+  box-sizing: border-box;
   white-space: nowrap;
 }
-.plan-visit-button:hover {
-  background-color: var(--color-silver);
+.plan-visit-wrapper:hover {
+  background-color: var(--color-beige);
 }
-.form-enter-info {
+.plan-visit1 {
   width: 528px;
   justify-content: center;
   max-width: 100%;
 }
-.new-here {
-  margin-right: -3px;
-  margin-bottom: 86px;
-  align-self: stretch;
+.new-here,
+.new-here-content {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.new-here-content {
+  flex: 1;
   background-color: var(--color-whitesmoke-200);
   overflow: hidden;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   padding: var(--padding-64xl) var(--padding-xl) var(--padding-63xl);
-  box-sizing: border-box;
   gap: var(--gap-12xl);
-  max-width: 100%;
+}
+.new-here {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-67xl);
   text-align: left;
   font-size: var(--card-title-size);
   color: var(--color-black);
   font-family: var(--card-title);
 }
 @media screen and (max-width: 1050px) {
-  .new-here-let {
+  .new-here-let1 {
     font-size: var(--font-size-7xl);
   }
 }
 @media screen and (max-width: 750px) {
-  .new-here {
+  .new-here-content {
     gap: var(--gap-mini);
   }
 }
 @media screen and (max-width: 450px) {
-  .new-here-let {
+  .new-here-let1 {
     font-size: var(--font-size-lgi);
   }
-  .plan-visit-button {
+  .plan-visit-wrapper {
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);
     box-sizing: border-box;
   }
-  .new-here {
+  .new-here-content {
     padding-top: var(--padding-35xl);
     padding-bottom: var(--padding-34xl);
+    box-sizing: border-box;
+  }
+  .new-here {
+    padding-bottom: var(--padding-37xl);
     box-sizing: border-box;
   }
 }

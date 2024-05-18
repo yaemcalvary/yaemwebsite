@@ -1,4 +1,4 @@
-.get-to-know {
+.get-to-know2 {
   margin: 0;
   position: relative;
   font-size: inherit;
@@ -12,13 +12,13 @@
   justify-content: flex-start;
   padding: 0 var(--padding-15xl);
 }
-.learn-about-our {
+.learn-about-our1 {
   align-self: stretch;
   position: relative;
-  font-size: var(--font-size-lg);
+  font-size: var(--body-text-lora-size);
   font-family: var(--font-sf-pro-text);
 }
-.frame-group {
+.frame-parent1 {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -26,17 +26,17 @@
   justify-content: flex-start;
   gap: var(--gap-mini);
 }
-.learn-more {
+.learn-more1 {
   position: relative;
   font-size: var(--button-text-size);
   text-transform: uppercase;
   display: inline-block;
-  font-family: var(--card-title);
+  font-family: var(--card-title1);
   color: var(--color-dimgray);
   text-align: left;
   min-width: 127px;
 }
-.learn-more-button {
+.learn-more-wrapper {
   cursor: pointer;
   border: 0;
   padding: var(--padding-mini) var(--padding-57xl) var(--padding-mini)
@@ -47,36 +47,36 @@
   flex-direction: row;
   white-space: nowrap;
 }
-.learn-more-button:hover {
+.learn-more-wrapper:hover {
   background-color: var(--color-silver);
 }
-.frame-parent,
-.know-inner,
-.learn-more-button,
-.learn-more-button-wrapper {
+.frame-container,
+.frame-div,
+.frame-wrapper1,
+.learn-more-wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.learn-more-button-wrapper {
+.frame-wrapper1 {
   flex-direction: row;
   padding: 0 var(--padding-7xs);
 }
-.frame-parent,
-.know-inner {
+.frame-container,
+.frame-div {
   flex-direction: column;
 }
-.frame-parent {
+.frame-div {
   align-self: stretch;
   gap: var(--gap-12xl);
 }
-.know-inner {
+.frame-container {
   width: 311px;
   padding: var(--padding-58xl) 0 0;
   box-sizing: border-box;
   min-width: 311px;
 }
-.know-image-icon {
+.image-3-icon1 {
   height: 363px;
   flex: 1;
   position: relative;
@@ -85,15 +85,15 @@
   object-fit: cover;
   min-width: 350px;
 }
-.know,
-.know-wrapper {
+.desktop-1-inner,
+.frame-group {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   box-sizing: border-box;
   max-width: 100%;
 }
-.know {
+.frame-group {
   width: 930px;
   box-shadow: 0 3px 10.8px 5px rgba(197, 197, 197, 0.09);
   border-radius: var(--br-11xl);
@@ -104,23 +104,23 @@
   padding: 0 0 0 var(--padding-33xl);
   gap: var(--gap-9xl);
 }
-.know-wrapper {
+.desktop-1-inner {
   width: 1418px;
   justify-content: center;
   padding: 0 var(--padding-xl) var(--padding-66xl);
   text-align: left;
   font-size: var(--card-title-size);
   color: var(--color-black);
-  font-family: var(--card-title);
+  font-family: var(--card-title1);
 }
 @media screen and (max-width: 1050px) {
-  .get-to-know {
+  .get-to-know2 {
     font-size: var(--font-size-7xl);
   }
-  .know-inner {
+  .frame-container {
     flex: 1;
   }
-  .know {
+  .frame-group {
     flex-wrap: wrap;
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);
@@ -129,23 +129,23 @@
   }
 }
 @media screen and (max-width: 750px) {
-  .know-image-icon {
+  .image-3-icon1 {
     min-width: 100%;
   }
 }
 @media screen and (max-width: 450px) {
-  .get-to-know {
+  .get-to-know2 {
     font-size: var(--font-size-lgi);
   }
-  .learn-more-button {
+  .learn-more-wrapper {
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);
     box-sizing: border-box;
   }
-  .frame-parent {
+  .frame-div {
     gap: var(--gap-mini);
   }
-  .know-wrapper {
+  .desktop-1-inner {
     padding-bottom: var(--padding-36xl);
     box-sizing: border-box;
   }

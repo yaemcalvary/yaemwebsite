@@ -1,14 +1,12 @@
-.church-image-icon {
+.unsplashnsn5labyy-m-icon2 {
   position: absolute;
-  height: 100%;
   top: 0;
-  bottom: 0;
   left: 0;
-  max-height: 100%;
   width: 1920px;
+  height: 686px;
   object-fit: cover;
 }
-.welcome-to-calvary {
+.welcome-to-calvary2 {
   margin: 0;
   position: absolute;
   top: 265px;
@@ -18,11 +16,11 @@
   font-family: inherit;
   z-index: 1;
 }
-.we-love-god {
+.we-love-god2 {
   margin: 0;
   white-space: pre-wrap;
 }
-.we-love-god-container {
+.we-love-god-container2 {
   position: absolute;
   top: 336px;
   left: 131px;
@@ -33,18 +31,18 @@
   height: 81px;
   z-index: 1;
 }
-.service-info {
+.service-info2 {
   position: relative;
   font-size: var(--button-text-size);
   text-transform: uppercase;
-  font-family: var(--card-title);
+  font-family: var(--card-title1);
   color: var(--color-dimgray);
   text-align: left;
 }
-.service-button {
+.service-info-container {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-mini) 74px;
+  padding: var(--padding-mini) var(--padding-55xl);
   background-color: var(--color-gainsboro-200);
   position: absolute;
   top: 444px;
@@ -58,62 +56,59 @@
   white-space: nowrap;
   z-index: 1;
 }
-.service-button:hover {
+.service-info-container:hover {
   background-color: var(--color-silver);
 }
-.hero {
-  height: 686px;
+.hero-section2 {
+  height: 697px;
   flex: 1;
   position: relative;
   background-color: var(--color-white);
   overflow: hidden;
   max-width: 100%;
 }
-.home-page,
-.hero-wrapper {
+.footer,
+.hero-section-wrapper {
   display: flex;
+  align-items: flex-start;
   justify-content: flex-start;
 }
-.hero-wrapper {
-  align-self: stretch;
+.hero-section-wrapper {
+  width: 1447px;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 0 0 var(--padding-66xl);
+  padding: 0 var(--padding-xl) var(--padding-68xl) 0;
   box-sizing: border-box;
   max-width: 100%;
   text-align: left;
-  font-size: 48px;
+  font-size: var(--font-size-29xl);
   color: var(--color-black);
-  font-family: var(--card-title);
+  font-family: var(--card-title1);
 }
-.home-page {
+.footer {
   width: 100%;
   position: relative;
-  background-color: var(--color-white);
-  overflow: hidden;
   flex-direction: column;
-  align-items: flex-end;
   line-height: normal;
   letter-spacing: normal;
 }
 @media screen and (max-width: 1050px) {
-  .welcome-to-calvary {
-    font-size: 38px;
+  .welcome-to-calvary2 {
+    font-size: var(--font-size-19xl);
   }
-  .hero-wrapper {
-    padding-bottom: var(--padding-36xl);
+  .hero-section-wrapper {
+    padding-bottom: var(--padding-38xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 450px) {
-  .welcome-to-calvary {
-    font-size: 29px;
+  .welcome-to-calvary2 {
+    font-size: var(--font-size-10xl);
   }
-  .we-love-god-container {
+  .we-love-god-container2 {
     font-size: var(--font-size-base);
   }
-  .hero-wrapper {
-    padding-bottom: var(--padding-17xl);
+  .hero-section-wrapper {
+    padding-bottom: var(--padding-18xl);
     box-sizing: border-box;
   }
 }

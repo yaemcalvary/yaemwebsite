@@ -1,104 +1,101 @@
-.screenshot-2024-04-23-at-3596 {
+.screenshot-2024-04-23-at-3595 {
   height: 56px;
   width: 88px;
   position: relative;
   object-fit: cover;
 }
-.calvary-yaem7 {
+.calvary-yaem5 {
   margin: 0;
   position: relative;
   font-size: inherit;
   font-weight: 600;
   font-family: inherit;
 }
-.calvary-yaem-wrapper2,
-.nav-bar-container {
+.calvary-yaem-frame,
+.learn-more3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-2xs) 0 0;
 }
-.nav-bar-container {
+.learn-more3 {
   overflow: hidden;
   flex-direction: row;
   padding: 0 var(--padding-xs) 0 0;
   gap: var(--gap-5xs);
   font-size: var(--card-title-size);
 }
-.visit-us5 {
+.visit-us4 {
   position: relative;
   font-weight: 600;
   display: inline-block;
   min-width: 76px;
 }
-.sundays-1pm3 {
-  margin-block-start: 0;
-  margin-block-end: 11px;
-  white-space: pre-wrap;
-}
-.ryders-lane-east3 {
-  margin: 0;
-}
-.sundays-1pm-daniel-container3 {
-  position: relative;
-  font-size: var(--font-size-base);
-  font-family: var(--font-sf-pro-text);
-}
-.frame-wrapper8,
-.visit-us-group {
+.visit-us3 {
+  width: 281px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.visit-us-group {
-  gap: var(--gap-base);
-}
-.frame-wrapper8 {
-  padding: var(--padding-mini) 0 0;
+  padding: var(--padding-lgi) var(--padding-xl) 0 0;
   box-sizing: border-box;
-  max-width: 100%;
 }
-.stay-connected4 {
+.stay-connected3 {
   position: relative;
   font-weight: 600;
 }
-.stay-connected-wrapper {
+.footer-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base) 0 0;
+}
+.get-to-know-us,
+.get-to-know-us-frame {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 var(--padding-11xs);
+  max-width: 100%;
 }
-.yaemcalvarygmailcom3 {
-  flex: 1;
-  position: relative;
-  white-space: nowrap;
+.get-to-know-us {
+  width: 1058px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
 }
-.yaemcalvarygmailcom-wrapper {
+.get-to-know-us-frame {
   align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 0 0 var(--padding-11xs);
 }
-.raphaelfacebook-icon3 {
+.sundays-1pm2 {
+  margin-block-start: 0;
+  margin-block-end: 11px;
+  white-space: pre-wrap;
+}
+.ryders-lane-east2 {
+  margin: 0;
+}
+.sundays-1pm-daniel-container2 {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.raphaelfacebook-icon2 {
   width: 32px;
   height: 34px;
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
 }
-.raphaelfacebook-wrapper {
+.email-signup {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-12xs) 0 0;
 }
-.uilinstagram-alt-icon3 {
+.uilinstagram-alt-icon2 {
   height: 36px;
   width: 34px;
   position: relative;
@@ -106,95 +103,109 @@
   flex-shrink: 0;
   min-height: 36px;
 }
-.email-input-field {
+.social-media-icons,
+.social-media-icons-wrapper {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+}
+.social-media-icons {
+  flex-direction: row;
   gap: var(--gap-4xs);
 }
-.frame-parent12 {
-  align-self: stretch;
-  gap: var(--gap-smi);
-  font-size: var(--font-size-base);
-  font-family: var(--font-sf-pro-text);
+.social-media-icons-wrapper {
+  flex-direction: column;
+  padding: var(--padding-17xl) var(--padding-8xs) 0 0;
 }
-.frame-parent11,
-.frame-parent12,
-.top-bar1 {
+.yaemcalvarygmailcom2 {
+  align-self: stretch;
+  position: relative;
+  white-space: nowrap;
+}
+.primary-button {
+  width: 233px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.frame-parent11 {
-  align-self: stretch;
-  gap: var(--gap-xl);
-}
-.top-bar1 {
-  width: 235px;
-  padding: var(--padding-xs) 0 0;
+  padding: var(--padding-12xs) 0 0;
   box-sizing: border-box;
 }
-.nav-bar-container-parent {
-  width: 1089px;
+.calvary-logo1,
+.service-info4 {
   display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.calvary-logo1 {
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
-  max-width: 100%;
-  gap: var(--gap-xl);
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-base);
+  font-family: var(--font-sf-pro-text);
 }
-.calvary-yaem-all3 {
+.service-info4 {
+  width: 1177px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.calvary-yaem-all2 {
   position: relative;
 }
-.bottom-bar-instance,
-.bottom-bar4 {
+.calvary-yaem-all-rights-reser-wrapper {
+  width: 1217px;
   display: flex;
-  align-items: flex-start;
-  max-width: 100%;
-}
-.bottom-bar-instance {
-  width: 1099px;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
+  max-width: 100%;
   font-size: var(--font-size-base);
   color: var(--color-gray-100);
 }
-.bottom-bar4 {
-  margin-right: -3px;
-  align-self: stretch;
+.bottom-bar3,
+.top-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.bottom-bar3 {
+  flex: 1;
   box-shadow: 0 3px 10.8px 5px rgba(197, 197, 197, 0.09);
   background-color: var(--color-gainsboro-100);
   overflow: hidden;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: var(--padding-52xl) var(--padding-115xl) var(--padding-8xl);
-  box-sizing: border-box;
+  padding: var(--padding-52xl) var(--padding-115xl) var(--padding-16xl);
   gap: var(--gap-81xl);
+}
+.top-bar {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-9xs);
   text-align: left;
   font-size: var(--button-text-size);
   color: var(--color-black);
   font-family: var(--card-title1);
 }
 @media screen and (max-width: 1200px) {
-  .bottom-bar4 {
+  .bottom-bar3 {
     padding-left: var(--padding-48xl);
     padding-right: var(--padding-48xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 1050px) {
-  .calvary-yaem7 {
+  .calvary-yaem5 {
     font-size: var(--font-size-7xl);
   }
-  .nav-bar-container-parent {
+  .calvary-logo1,
+  .get-to-know-us {
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 @media screen and (max-width: 750px) {
-  .bottom-bar4 {
+  .bottom-bar3 {
     gap: var(--gap-31xl);
     padding-left: var(--padding-14xl);
     padding-right: var(--padding-14xl);
@@ -202,17 +213,20 @@
   }
 }
 @media screen and (max-width: 450px) {
-  .calvary-yaem7 {
+  .calvary-yaem5 {
     font-size: var(--font-size-lgi);
   }
-  .nav-bar-container {
+  .learn-more3 {
     flex-wrap: wrap;
   }
-  .stay-connected4,
-  .visit-us5 {
+  .stay-connected3,
+  .visit-us4 {
     font-size: var(--font-size-base);
   }
-  .bottom-bar4 {
+  .bottom-bar3 {
     gap: var(--gap-6xl);
+    padding-top: var(--padding-27xl);
+    padding-bottom: var(--padding-4xl);
+    box-sizing: border-box;
   }
 }

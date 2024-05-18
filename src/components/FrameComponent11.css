@@ -1,0 +1,118 @@
+.new-here-let2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.new-here-let-us-know-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-14xl);
+}
+.we-are-looking2 {
+  margin: 0;
+}
+.we-are-looking-container2 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-text-lora-size);
+  font-family: var(--font-sf-pro-text);
+  text-align: center;
+}
+.frame-parent5 {
+  width: 528px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-2xl);
+  max-width: 100%;
+}
+.plan-a-visit2 {
+  position: relative;
+  font-size: var(--button-text-size);
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: var(--card-title1);
+  color: var(--color-dimgray);
+  text-align: left;
+  min-width: 126px;
+}
+.frame-wrapper4,
+.plan-a-visit-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.plan-a-visit-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) var(--padding-58xl);
+  background-color: var(--color-gainsboro-200);
+  border-radius: var(--br-13xl);
+  overflow: hidden;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.plan-a-visit-wrapper:hover {
+  background-color: var(--color-silver);
+}
+.frame-wrapper4 {
+  width: 528px;
+  justify-content: center;
+  max-width: 100%;
+}
+.footer-child,
+.frame-parent4 {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frame-parent4 {
+  flex: 1;
+  background-color: var(--color-whitesmoke-200);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-64xl) var(--padding-xl) var(--padding-69xl)
+    var(--padding-2xl);
+  gap: var(--gap-9xl);
+}
+.footer-child {
+  width: 1435px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-9xs) var(--padding-69xl);
+  text-align: left;
+  font-size: var(--card-title-size);
+  color: var(--color-black);
+  font-family: var(--card-title1);
+}
+@media screen and (max-width: 1050px) {
+  .new-here-let2 {
+    font-size: var(--font-size-7xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .new-here-let2 {
+    font-size: var(--font-size-lgi);
+  }
+  .plan-a-visit-wrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .frame-parent4 {
+    padding-top: var(--padding-35xl);
+  }
+  .footer-child,
+  .frame-parent4 {
+    padding-bottom: var(--padding-38xl);
+    box-sizing: border-box;
+  }
+}
