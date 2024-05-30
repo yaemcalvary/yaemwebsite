@@ -1,70 +1,33 @@
-import { useEffect } from "react";
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
-import Home from "./pages/Home";
-import Desktop1 from "./pages/Desktop1";
-import Footer1 from "./pages/Footer";
-import Desktop from "./pages/Desktop";
+// import logo from "./logo.svg";
+import "./App.css";
+import Header from "./header";
+// import Footer from "./footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./home";
+// import AboutPage from "./about";
+// import ProgramPage from "./program";
+// import ContactPage from "./contact";
+// import VolunteerPage from "./volunteer";
 
 function App() {
-  const action = useNavigationType();
-  const location = useLocation();
-  const pathname = location.pathname;
-
-  useEffect(() => {
-    if (action !== "POP") {
-      window.scrollTo(0, 0);
-    }
-  }, [action, pathname]);
-
-  useEffect(() => {
-    let title = "";
-    let metaDescription = "";
-
-    switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/desktop-1":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/footer":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/desktop-11":
-        title = "";
-        metaDescription = "";
-        break;
-    }
-
-    if (title) {
-      document.title = title;
-    }
-
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
-    }
-  }, [pathname]);
-
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/desktop-1" element={<Desktop1 />} />
-      <Route path="/footer" element={<Footer1 />} />
-      <Route path="/desktop-11" element={<Desktop />} />
-    </Routes>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <div className="flex-grow">
+          {/* Setup the Router Switch and Routes here */}
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            {/* <Route path="/about" element={<AboutPage />} />
+            <Route path="/program" element={<ProgramPage />} />
+            <Route path="/volunteer" element={<VolunteerPage />} />
+            <Route path="/contact" element={<ContactPage />} /> */}
+          </Routes>
+        </div>
+        {/* <Footer /> */}
+      </div>
+    </Router>
   );
 }
+
 export default App;
