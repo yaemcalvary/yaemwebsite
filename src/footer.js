@@ -1,27 +1,32 @@
 import React from "react";
+
 function Footer() {
   return (
     <footer className="bg-white py-6 px-10">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-4 items-center">
-        <div className="md:pl-24 space-y-2">
-          <div className="flex items-center space-x-4">
-            <img
-              src="/yaemlogo.png"
-              alt="Calvary Logo"
-              className="h-8 w-auto"
-            />
-            <span className="font-bold text-xl">Calvary YAEM</span>
-          </div>
-          <p className="text-gray-600 text-sm md:pl-12">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-4 items-start">
+        {/* Left Section: Logo and Calvary YAEM */}
+        <div className="flex items-center space-x-4 md:pl-24">
+          <img src="/yaemlogo.png" alt="Calvary Logo" className="h-8 w-auto" />
+          <span className="font-bold text-xl">Calvary YAEM</span>
+        </div>
+
+        {/* Middle Section: Text */}
+        <div className="text-gray-700 text-sm space-y-2">
+          <div className="text-lg font-bold">Visit us!</div>
+          <div className="flex">Sundays 1pm @ Daniel Chapel</div>
+          <div className="flex">572 Ryders Lane, East Brunswick, NJ 08816</div>
+          <p className="text-gray-600 text-sm mt-4 pt-10">
             © 2024 Calvary KUMC. All rights reserved
           </p>
         </div>
-        <div className="text-gray-700 text-sm space-y-1 md:pt-8">
-          <div className="text-lg font-bold">Stay Connected!</div>
+
+        {/* Right Section: Contact Info and Social Icons */}
+        <div className="text-gray-700 text-sm space-y-2 md:pt-8">
+          <div className="text-lg font-bold">Stay connected!</div>
           <div className="flex">yaemcalvary@gmail.com</div>
-          {/* facebook icon */}
-          <div className="flex">
-            <span class="[&>svg]:h-5 [&>svg]:w-5">
+          <div className="flex space-x-4 mt-4">
+            {/* Facebook Icon */}
+            <span className="[&>svg]:h-5 [&>svg]:w-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -30,10 +35,8 @@ function Footer() {
                 <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
               </svg>
             </span>
-          </div>
-          {/* instagram icon */}
-          <div className="flex">
-            <span class="[&>svg]:h-5 [&>svg]:w-5">
+            {/* Instagram Icon */}
+            <span className="[&>svg]:h-5 [&>svg]:w-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
