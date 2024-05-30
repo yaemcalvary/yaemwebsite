@@ -74,35 +74,39 @@ function HomePage() {
       <div className="flex">
         {/* Left Half with Image and Text */}
         <div className="w-1/2 p-8">
-          <div className="relative">
-            <img
-              src="/michael.png"
-              alt="Left"
-              className="w-full h-auto rounded-xl"
-            />
-            <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center">
-              <div className="text-white text-center">
-                <h3 className="text-3xl text-black font-bold mb-4">Events</h3>
+          <Link to="/events">
+            <div className="relative">
+              <img
+                src="/michael.png"
+                alt="Events"
+                className="w-full h-auto rounded-2xl"
+              />
+              <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center">
+                <div className="text-white text-center">
+                  <h3 className="text-3xl text-black font-bold mb-4">Events</h3>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
         {/* Right Half with Image and Text */}
         <div className="w-1/2 p-8">
-          <div className="relative">
-            <img
-              src="/bible.png"
-              alt="Bible"
-              className="w-full h-auto rounded-xl"
-            />
-            <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center">
-              <div className="text-white text-center">
-                <h3 className="text-3xl text-black font-bold mb-4">
-                  Resources
-                </h3>
+          <Link to="/resources">
+            <div className="relative">
+              <img
+                src="/bible.png"
+                alt="Bible"
+                className="w-full h-auto rounded-lg"
+              />
+              <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center">
+                <div className="text-white text-center">
+                  <h3 className="text-3xl text-black font-bold mb-4">
+                    Resources
+                  </h3>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 

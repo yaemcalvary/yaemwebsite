@@ -5,7 +5,7 @@ import Footer from "./footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./home";
 // import AboutPage from "./about";
-// import ProgramPage from "./program";
+import EventsPage from "./events";
 // import ContactPage from "./contact";
 // import VolunteerPage from "./volunteer";
 
@@ -18,6 +18,7 @@ function App() {
           {/* Setup the Router Switch and Routes here */}
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/events" element={<EventsPage />} />
             {/* <Route path="/about" element={<AboutPage />} />
             <Route path="/program" element={<ProgramPage />} />
             <Route path="/volunteer" element={<VolunteerPage />} />
