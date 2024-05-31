@@ -15,19 +15,19 @@ function HomePage() {
         }}
       >
         <div className="hero-text text-left ml-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#333333] mb-4">
             Welcome to Calvary YAEM!
           </h1>
-          <p className="text-lg text-white max-w-md">
+          <p className="text-lg text-[#333333] max-w-md">
             We love God by growing in our knowledge of Him and living in
             obedience to His Word. We recall His love so that we are driven to
             love those who are around us.
           </p>
           <Link
-            to="/"
-            className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-block mt-4 border border-blue-700 border-solid border-2"
+            to="/service"
+            className="bg-transparent hover:bg-blue-200 text-white font-bold py-2 px-4 rounded inline-block mt-4 border-white border-solid border-2"
           >
-            Learn More
+            About Service
           </Link>
         </div>
       </div>
@@ -35,17 +35,20 @@ function HomePage() {
       {/* Existing Section */}
       <div className="flex">
         {/* Left Half */}
-        <div className="w-1/2 p-8">
-          <h2 className="text-2xl font-bold mb-4">About Us</h2>
-          <p className="text-lg">
-            Learn about our mission, our beliefs, and the hope we have in Jesus.
-          </p>
-          <Link
-            to="/about"
-            className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-block mt-4 border border-blue-700 border-solid border-2"
-          >
-            Learn More
-          </Link>
+        <div className="w-1/2 p-8 flex flex-col items-center justify-center">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold mb-4">Get to know us!</h2>
+            <p className="text-lg">
+              Learn about our mission, our beliefs, and the hope we have in
+              Jesus.
+            </p>
+            <Link
+              to="/about"
+              className="bg-white hover:bg-blue-200 text-[#004686] font-bold py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
+            >
+              Learn More
+            </Link>
+          </div>
         </div>
         {/* Right Half (Image) */}
         <div className="w-1/2">
@@ -63,7 +66,7 @@ function HomePage() {
           </p>
           <Link
             to="/"
-            className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-block mt-4"
+            className="bg-transparent hover:bg-blue-200 text-[#004686] font-bold py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
           >
             Plan A Visit
           </Link>
@@ -90,7 +93,7 @@ function HomePage() {
           </Link>
         </div>
         {/* Right Half with Image and Text */}
-        <div className="w-1/2 p-8">
+        {/* <div className="w-1/2 p-8">
           <Link to="/resources">
             <div className="relative">
               <img
@@ -107,7 +110,7 @@ function HomePage() {
               </div>
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* New Section with Background Image */}
@@ -138,7 +141,7 @@ function HomePage() {
           </p>
           <Link
             to="/"
-            className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-block mt-4"
+            className="bg-transparent hover:bg-blue-200 text-white font-bold py-2 px-4 rounded inline-block mt-4  border-white border-solid border-2"
           >
             Connect
           </Link>

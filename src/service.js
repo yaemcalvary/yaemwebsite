@@ -18,8 +18,8 @@ function ServicePage() {
           position: "relative",
         }}
       >
-        <div className="relative text-center text-white">
-          <h1 className="text-3xl md:text-6xl font-bold">Service</h1>
+        <div className="relative text-center text-black">
+          <h1 className="text-3xl md:text-6xl font-medium">Service</h1>
         </div>
       </div>
 
@@ -95,6 +95,22 @@ function ServicePage() {
         </div>
       </div>
       {/* end of section */}
+      {/* New Section */}
+      <div className="bg-blue-100 flex items-center justify-center py-12">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold mb-4">New here? Let us know!</h2>
+          <p className="text-lg mb-4">
+            We are looking forward to meeting you! Please fill out the
+            information below so that we can prepare for your visit.
+          </p>
+          <Link
+            to="/"
+            className="bg-transparent hover:bg-blue-200 text-[#004686] font-bold py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
+          >
+            Plan A Visit
+          </Link>
+        </div>
+      </div>
       {/* New Background Section */}
       <div
         className="flex items-center justify-center text-center text-white py-24"
@@ -112,7 +128,7 @@ function ServicePage() {
           </p>
           <Link
             to="/service"
-            className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-block mt-4"
+            className="bg-transparent hover:bg-blue-200 text-white font-bold py-2 px-4 rounded inline-block mt-4  border-white border-solid border-2"
           >
             Connect
           </Link>

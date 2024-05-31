@@ -59,7 +59,7 @@ function EventsPage() {
           </p>
           <Link
             to="/events"
-            className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded"
+            className="bg-transparent hover:bg-blue-200 text-[#004686] border-[#004686] border-2 font-bold py-2 px-4 rounded"
           >
             Connect
           </Link>
@@ -86,7 +86,7 @@ function EventsPage() {
           </p>
           <Link
             to="/events"
-            className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded"
+            className="bg-transparent hover:bg-blue-200 text-white font-bold py-2 px-4 rounded inline-block mt-4  border-white border-solid border-2"
           >
             Connect
           </Link>

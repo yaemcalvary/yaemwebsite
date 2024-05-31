@@ -7,7 +7,7 @@ import HomePage from "./home";
 import AboutPage from "./about";
 import EventsPage from "./events";
 import ServicePage from "./service";
-import ResourcesPage from "./resources";
+// import ResourcesPage from "./resources";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/events" element={<EventsPage />} />
             <Route path="/service" element={<ServicePage />} />
-            <Route path="/resources" element={<ResourcesPage />} />
+            {/* <Route path="/resources" element={<ResourcesPage />} /> */}
           </Routes>
         </div>
         <Footer />

@@ -3,9 +3,9 @@ import React from "react";
 function Footer() {
   return (
     <footer className="bg-white py-6 px-10">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-4 items-start md:items-stretch">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-4 items-start">
         {/* Left Section: Logo and Calvary YAEM */}
-        <div className="flex items-center justify-center md:justify-start space-x-4 md:pl-24">
+        <div className="flex items-start justify-center md:justify-start space-x-4 md:pl-24">
           <img src="/yaemlogo.png" alt="Calvary Logo" className="h-8 w-auto" />
           <span className="font-bold text-xl">Calvary YAEM</span>
         </div>
@@ -25,7 +25,7 @@ function Footer() {
         </div>
 
         {/* Right Section: Contact Info and Social Icons */}
-        <div className="text-gray-700 text-sm space-y-2 text-center md:text-left md:pt-8">
+        <div className="text-gray-700 text-sm space-y-2 text-center md:text-left">
           <div className="text-lg font-bold">Stay connected!</div>
           <div className="flex justify-center md:justify-start">
             yaemcalvary@gmail.com
