@@ -33,7 +33,7 @@ function AboutPage() {
     },
     {
       id: 5,
-      image: "/bornagain.png",
+      image: "/bornAgain.png",
       name: "Being Born Again",
       description:
         "Those quickened by the Spirit, upon hearing the Word of God, believe in Christ as their Savior, are born anew, adopted as God's children, and will persevere until the end.",
@@ -83,7 +83,7 @@ function AboutPage() {
         </div>
         <div className="w-1/2">
           <img
-            src="/churchtopright.png"
+            src="/churchTopRight.png"
             alt="Our Mission"
             className="w-full h-auto"
           />
@@ -94,7 +94,7 @@ function AboutPage() {
       <div className="flex py-12 bg-gray-100">
         <div className="w-1/2">
           <img
-            src="/churchbotleft.png"
+            src="/churchBotLeft.png"
             alt="Our Vision"
             className="w-full h-auto"
           />
@@ -192,7 +192,7 @@ function AboutPage() {
       <div
         className="flex items-center justify-center text-center text-white py-24"
         style={{
-          backgroundImage: `url('/image-2@2x.png')`,
+          backgroundImage: `url('/taz.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -204,7 +204,7 @@ function AboutPage() {
             up-to-date with everything happening at Calvary
           </p>
           <Link
-            to="/"
+            to="/about"
             className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-block mt-4"
           >
             Connect

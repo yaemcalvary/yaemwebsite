@@ -8,7 +8,7 @@ function EventsPage() {
       <div
         className="hero-section flex items-center justify-center"
         style={{
-          backgroundImage: `url('/eventhero.png')`,
+          backgroundImage: `url('/eventHero.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "300px",
@@ -42,7 +42,11 @@ function EventsPage() {
       <div className="flex">
         {/* Left Half (Image) */}
         <div className="w-1/2">
-          <img src="/events2.png" alt="Volleyball" className="w-full h-auto" />
+          <img
+            src="/volleyball.png"
+            alt="Volleyball"
+            className="w-full h-auto"
+          />
         </div>
         {/* Right Half (Text in Light Blue Rectangle) */}
         <div className="w-1/2 bg-blue-100 p-8 flex flex-col justify-center items-start">
@@ -66,7 +70,7 @@ function EventsPage() {
       <div
         className="flex items-center justify-center py-12"
         style={{
-          backgroundImage: `url('/image-2@2x.png')`,
+          backgroundImage: `url('/taz.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "500px",

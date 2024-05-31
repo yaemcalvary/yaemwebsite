@@ -11,7 +11,7 @@ function ServicePage() {
       <div
         className="hero-section flex items-center justify-center"
         style={{
-          backgroundImage: `url('/servicehero.png')`,
+          backgroundImage: `url('/serviceHero.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "300px",
@@ -99,7 +99,7 @@ function ServicePage() {
       <div
         className="flex items-center justify-center text-center text-white py-24"
         style={{
-          backgroundImage: `url('/image-2@2x.png')`,
+          backgroundImage: `url('/taz.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -111,7 +111,7 @@ function ServicePage() {
             up-to-date with everything happening at Calvary
           </p>
           <Link
-            to="/"
+            to="/service"
             className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-block mt-4"
           >
             Connect

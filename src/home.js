@@ -24,7 +24,7 @@ function HomePage() {
             love those who are around us.
           </p>
           <Link
-            to="/about"
+            to="/"
             className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-block mt-4 border border-blue-700 border-solid border-2"
           >
             Learn More
@@ -49,7 +49,7 @@ function HomePage() {
         </div>
         {/* Right Half (Image) */}
         <div className="w-1/2">
-          <img src="/image-3@2x.png" alt="Group" className="w-full h-auto" />
+          <img src="/groupPicture.png" alt="Group" className="w-full h-auto" />
         </div>
       </div>
 
@@ -122,7 +122,7 @@ function HomePage() {
         <div
           className="absolute top-0 left-0 w-full h-full"
           style={{
-            backgroundImage: `url('/image-2@2x.png')`,
+            backgroundImage: `url('/taz.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             filter: "brightness(70%)", // Adjust the brightness percentage as needed
