@@ -1,10 +1,11 @@
 import React from "react";
+import "./styles.css";
 import "@fontsource/lora";
 import "@fontsource/source-serif-pro";
 
 function Footer() {
   return (
-    <footer className="bg-white py-6 px-10">
+    <footer className="bg-[#EAEFFF] py-6 px-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-4 items-start">
         {/* Left Section: Logo and Calvary YAEM */}
         <div className="flex items-start justify-center md:justify-start space-x-4 md:pl-24">
@@ -15,10 +16,10 @@ function Footer() {
         {/* Middle Section: Text */}
         <div className="text-gray-700 text-sm space-y-2 text-center md:text-left">
           <div className="text-lg font-bold font-source-serif">Visit us!</div>
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start font-sf-pro-l">
             Sundays 1pm @ Daniel Chapel
           </div>
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start font-sf-pro-l">
             572 Ryders Lane, East Brunswick, NJ 08816
           </div>
           <p className="text-gray-600 text-sm font-source-serif mt-4 pt-10">
@@ -31,7 +32,7 @@ function Footer() {
           <div className="text-lg font-bold font-source-serif">
             Stay connected!
           </div>
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start font-sf-pro-l">
             yaemcalvary@gmail.com
           </div>
           <div className="flex justify-center md:justify-start space-x-4 mt-4">

@@ -20,7 +20,7 @@ function ServicePage() {
         }}
       >
         <div className="relative text-center text-[#333333]">
-          <h1 className="text-3xl md:text-6xl font-semibold font-lora">
+          <h1 className="text-3xl md:text-4xl font-normal font-lora">
             Service
           </h1>
         </div>
@@ -62,7 +62,7 @@ function ServicePage() {
       {/* Image Carousel Section */}
       <div className="py-12">
         <div className="container mx-auto px-4">
-          <div className="max-w-md mx-auto">
+          <div className="max-w-lg mx-auto">
             <Carousel
               showThumbs={false}
               infiniteLoop
@@ -75,7 +75,7 @@ function ServicePage() {
               </div>
               <div>
                 <img src="/stairsEntrance.png" alt="Stairs Entrance" />
-                <p className="legend">Stairs Entrance</p>
+                <p className="legend">Main Lobby</p>
               </div>
               <div>
                 <img src="/hallway.png" alt="Hallway" />
@@ -106,8 +106,9 @@ function ServicePage() {
         </div>
       </div>
       {/* end of section */}
+
       {/* New Section */}
-      <div className="bg-blue-100 flex items-center justify-center py-12">
+      <div className="bg-[#C3D0FF59] flex items-center justify-center py-12">
         <div className="text-center">
           <h2 className="text-3xl font-semibold font-lora mb-4">
             New here? Let us know!

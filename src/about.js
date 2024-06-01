@@ -6,7 +6,7 @@ function AboutPage() {
   const teamMembers = [
     {
       id: 1,
-      image: "/yaemlogo.png",
+      image: "/scripture.png",
       name: "Inerrancy and Infallibility of Scripture",
       description:
         "The Bible is the inspired and inerrant Word of God, the only infallible rule of faith and practice.",
@@ -76,7 +76,7 @@ function AboutPage() {
         }}
       >
         <div className="relative text-center text-[#333333]">
-          <h1 className="text-3xl md:text-6xl font-semibold font-lora">
+          <h1 className="text-3xl md:text-4xl font-normal font-lora">
             About Us
           </h1>
         </div>

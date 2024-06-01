@@ -14,6 +14,8 @@ module.exports = {
       fontFamily: {
         lora: ["Lora", "serif"],
         "source-serif": ["Source Serif Pro", "serif"],
+        "sf-pro": ['"SF Pro"', "sans-serif"],
+        "sf-pro-l": ['"SF Pro Light"', "sans-serif"],
       },
     },
     // Other Tailwind config...

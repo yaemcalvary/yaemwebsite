@@ -17,7 +17,7 @@ function EventsPage() {
         }}
       >
         <div className="relative text-center text-white">
-          <h1 className="text-3xl md:text-6xl font-bold font-lora">Events</h1>
+          <h1 className="text-3xl md:text-4xl font-normal font-lora">Events</h1>
         </div>
       </div>
 
@@ -50,7 +50,7 @@ function EventsPage() {
           />
         </div>
         {/* Right Half (Text in Light Blue Rectangle) */}
-        <div className="w-1/2 bg-blue-100 p-8 flex flex-col justify-center items-start">
+        <div className="w-1/2 bg-[#C3D0FF59] p-8 flex flex-col justify-center items-start">
           <h3 className="text-2xl font-bold font-lora mb-4">
             First time joining our events?
           </h3>

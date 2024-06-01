@@ -42,8 +42,8 @@ function HomePage() {
               Get to know us!
             </h2>
             <p className="text-lg font-normal font-lora max-w-sm mx-auto">
-              Learn about our mission, our beliefs, and the hope we have in
-              Jesus.
+              Learn about our mission, our beliefs, <br />
+              and the hope we have in Jesus.
             </p>
             <Link
               to="/about"
@@ -60,7 +60,7 @@ function HomePage() {
       </div>
 
       {/* New Section */}
-      <div className="bg-blue-100 flex items-center justify-center py-12">
+      <div className="bg-[#C3D0FF59] flex items-center justify-center py-12">
         <div className="text-center">
           <h2 className="text-3xl font-semibold font-lora mb-4">
             New here? Let us know!
@@ -90,7 +90,7 @@ function HomePage() {
               />
               <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center">
                 <div className="text-white text-center">
-                  <h3 className="text-3xl text-black font-semibold font-lora mb-4">
+                  <h3 className="text-4xl text-black font-semibold font-lora mb-4 pt-5">
                     Events
                   </h3>
                 </div>
