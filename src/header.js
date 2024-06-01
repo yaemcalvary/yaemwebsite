@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog, Popover } from "@headlessui/react";
 import { Link } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import "@fontsource/lora";
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,7 +28,9 @@ export default function Example() {
               src="/yaemlogo.png"
               alt="Calvary Logo"
             />
-            <span className="font-bold text-xl">Calvary YAEM</span>
+            <span className="font-semibold font-lora text-xl">
+              Calvary YAEM
+            </span>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -43,21 +46,27 @@ export default function Example() {
         <Popover.Group className="hidden lg:flex lg:gap-x-16">
           <Link
             to="/"
-            className="text-md font-semibold leading-6 text-gray-900"
+            className="text-md font-normal font-lora leading-6 text-gray-900"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="text-md font-semibold leading-6 text-gray-900"
+            className="text-md font-normal font-lora leading-6 text-gray-900"
           >
             About
           </Link>
           <Link
             to="/service"
-            className="text-md font-semibold leading-6 text-gray-900"
+            className="text-md font-normal font-lora leading-6 text-gray-900"
           >
             Service
+          </Link>
+          <Link
+            to="/events"
+            className="text-md font-normal font-lora leading-6 text-gray-900"
+          >
+            Events
           </Link>
         </Popover.Group>
       </nav>

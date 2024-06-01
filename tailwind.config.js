@@ -9,5 +9,13 @@
 // tailwind.config.js
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  // Other Tailwind config...
+  theme: {
+    extend: {
+      fontFamily: {
+        lora: ["Lora", "serif"],
+        "source-serif": ["Source Serif Pro", "serif"],
+      },
+    },
+    // Other Tailwind config...
+  },
 };

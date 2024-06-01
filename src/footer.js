@@ -1,4 +1,6 @@
 import React from "react";
+import "@fontsource/lora";
+import "@fontsource/source-serif-pro";
 
 function Footer() {
   return (
@@ -7,26 +9,28 @@ function Footer() {
         {/* Left Section: Logo and Calvary YAEM */}
         <div className="flex items-start justify-center md:justify-start space-x-4 md:pl-24">
           <img src="/yaemlogo.png" alt="Calvary Logo" className="h-8 w-auto" />
-          <span className="font-bold text-xl">Calvary YAEM</span>
+          <span className="font-bold font-lora text-xl">Calvary YAEM</span>
         </div>
 
         {/* Middle Section: Text */}
         <div className="text-gray-700 text-sm space-y-2 text-center md:text-left">
-          <div className="text-lg font-bold">Visit us!</div>
+          <div className="text-lg font-bold font-source-serif">Visit us!</div>
           <div className="flex justify-center md:justify-start">
             Sundays 1pm @ Daniel Chapel
           </div>
           <div className="flex justify-center md:justify-start">
             572 Ryders Lane, East Brunswick, NJ 08816
           </div>
-          <p className="text-gray-600 text-sm mt-4 pt-10">
+          <p className="text-gray-600 text-sm font-source-serif mt-4 pt-10">
             © 2024 Calvary KUMC. All rights reserved
           </p>
         </div>
 
         {/* Right Section: Contact Info and Social Icons */}
         <div className="text-gray-700 text-sm space-y-2 text-center md:text-left">
-          <div className="text-lg font-bold">Stay connected!</div>
+          <div className="text-lg font-bold font-source-serif">
+            Stay connected!
+          </div>
           <div className="flex justify-center md:justify-start">
             yaemcalvary@gmail.com
           </div>

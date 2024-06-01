@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "@fontsource/lora";
 
 function EventsPage() {
   return (
@@ -16,14 +17,14 @@ function EventsPage() {
         }}
       >
         <div className="relative text-center text-white">
-          <h1 className="text-3xl md:text-6xl font-bold">Events</h1>
+          <h1 className="text-3xl md:text-6xl font-bold font-lora">Events</h1>
         </div>
       </div>
 
       {/* Calendar Section */}
       <div className="py-12 bg-gray-100">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Our Events</h2>
+          <h2 className="text-3xl font-bold font-lora mb-4">Our Events</h2>
           <div className="flex justify-center">
             <iframe
               src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York"
@@ -50,16 +51,16 @@ function EventsPage() {
         </div>
         {/* Right Half (Text in Light Blue Rectangle) */}
         <div className="w-1/2 bg-blue-100 p-8 flex flex-col justify-center items-start">
-          <h3 className="text-2xl font-bold mb-4">
+          <h3 className="text-2xl font-bold font-lora mb-4">
             First time joining our events?
           </h3>
-          <p className="text-lg mb-4">
+          <p className="text-lg font-lora mb-4">
             Let us know by filling out this form! We will be ready to welcome
             you the best way we can.
           </p>
           <Link
             to="/events"
-            className="bg-transparent hover:bg-blue-200 text-[#004686] border-[#004686] border-2 font-bold py-2 px-4 rounded"
+            className="bg-transparent font-lora hover:bg-blue-200 text-[#0056BB] border-[#0056BB] border-2 font-bold py-2 px-4 rounded"
           >
             Connect
           </Link>
