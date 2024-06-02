@@ -12,42 +12,43 @@ function HomePage() {
           backgroundImage: `url('/church2.png')`,
           backgroundSize: "100%",
           backgroundPosition: "center",
-          height: "500px",
+          height: "600px",
         }}
       >
         <div className="hero-text text-left ml-8">
           <h1 className="text-4xl md:text-6xl font-semibold font-lora text-[#333333] mb-4">
             Welcome to Calvary YAEM!
           </h1>
-          <p className="text-lg font-normal font-lora text-[#333333] max-w-md">
+          <p className="text-lg font-normal font-lora text-[#333333] max-w-lg">
             We love God by growing in our knowledge of Him and living in
             obedience to His Word. We recall His love so that we are driven to
             love those who are around us.
           </p>
           <Link
             to="/service"
-            className="bg-transparent hover:bg-blue-200 text-white font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-white border-solid border-2"
+            className="text-xl bg-transparent hover:bg-blue-200 text-white font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-white border-solid border-2"
           >
             About Service
           </Link>
         </div>
       </div>
+      {/* End of Hero Section */}
 
-      {/* Existing Section */}
+      {/* Get to know us Section */}
       <div className="flex">
         {/* Left Half */}
         <div className="w-1/2 p-8 flex flex-col items-center justify-center">
           <div className="text-center">
-            <h2 className="text-2xl font-semibold font-lora mb-4">
+            <h2 className="text-3xl font-semibold font-lora mb-4">
               Get to know us!
             </h2>
-            <p className="text-lg font-normal font-lora max-w-sm mx-auto">
+            <p className="text-lg font-normal font-lora max-w-lg mx-auto">
               Learn about our mission, our beliefs, <br />
               and the hope we have in Jesus.
             </p>
             <Link
               to="/about"
-              className="bg-white hover:bg-blue-200 text-[#004686] font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
+              className="bg-white hover:bg-blue-200 text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
             >
               Learn More
             </Link>
@@ -58,26 +59,29 @@ function HomePage() {
           <img src="/groupPicture.png" alt="Group" className="w-full h-auto" />
         </div>
       </div>
+      {/* End of Get to know us Section */}
 
-      {/* New Section */}
+      {/* New Here Section */}
       <div className="bg-[#C3D0FF59] flex items-center justify-center py-12">
         <div className="text-center">
           <h2 className="text-3xl font-semibold font-lora mb-4">
             New here? Let us know!
           </h2>
-          <p className="text-lg font-normal font-lora max-w-sm mx-auto mb-4">
+          <p className="text-lg font-normal font-lora max-w-lg mx-auto mb-4">
             We are looking forward to meeting you! Please fill out the
             information below so that we can prepare for your visit.
           </p>
           <Link
             to="/"
-            className="bg-transparent hover:bg-blue-200 text-[#004686] font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
+            className="bg-transparent hover:bg-blue-200 text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
           >
             Plan A Visit
           </Link>
         </div>
       </div>
+      {/* End of New Here Section */}
 
+      {/* Events Section */}
       <div className="flex justify-center items-center min-h-screen">
         {/* Left Half with Image and Text */}
         <div className="w-1/2 p-8">
@@ -119,8 +123,9 @@ function HomePage() {
           </Link>
         </div> */}
       </div>
+      {/* End of Events Section */}
 
-      {/* New Section with Background Image */}
+      {/* Connect with Us Section */}
       <div
         className="flex items-center justify-center py-12"
         style={{
@@ -135,7 +140,7 @@ function HomePage() {
             backgroundImage: `url('/taz.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            filter: "brightness(70%)", // Adjust the brightness percentage as needed
+            filter: "brightness(50%)", // Adjust the brightness percentage as needed
           }}
         />
 
@@ -144,18 +149,21 @@ function HomePage() {
           <h2 className="text-3xl font-bold font-lora mb-4">
             Connect with us!
           </h2>
-          <p className="text-lg font-lora mb-4">
-            We would love to get to know you! Join our email list and keep
-            up-to-date with everything happening at Calvary
-          </p>
+          <div className="max-w-lg mx-auto">
+            <p className="text-lg font-medium font-lora mb-4">
+              We would love to get to know you! Join our email list and keep
+              up-to-date with everything happening at Calvary.
+            </p>
+          </div>
           <Link
             to="/"
-            className="bg-transparent hover:bg-blue-200 text-white font-bold font-lora py-2 px-4 rounded inline-block mt-4  border-white border-solid border-2"
+            className="bg-transparent hover:bg-blue-200 text-xl text-white font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-white border-solid border-2"
           >
             Connect
           </Link>
         </div>
       </div>
+      {/* End of Connect with Us Section */}
     </div>
   );
 }

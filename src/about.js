@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "@fontsource/lora";
 
 function AboutPage() {
+  // Values
   const teamMembers = [
     {
       id: 1,
@@ -81,11 +82,12 @@ function AboutPage() {
           </h1>
         </div>
       </div>
+      {/* End of Hero Section */}
 
-      {/* Split Section with Text on Left and Image on Right */}
+      {/* Our Mission Section */}
       <div className="flex">
         <div className="w-1/2 p-8 flex flex-col justify-center items-center">
-          <div className="text-center">
+          <div className="w-full max-w-md">
             <h2 className="text-2xl font-semibold font-lora mb-4">
               Our Mission
             </h2>
@@ -103,8 +105,9 @@ function AboutPage() {
           />
         </div>
       </div>
+      {/* End of Our Mission Section */}
 
-      {/* Split Section with Image on Left and Text on Right */}
+      {/* Our Vision Section */}
       <div className="flex">
         <div className="w-1/2">
           <img
@@ -114,7 +117,7 @@ function AboutPage() {
           />
         </div>
         <div className="w-1/2 p-8 flex flex-col justify-center items-center">
-          <div className="text-center">
+          <div className="w-full max-w-md">
             <h2 className="text-2xl font-semibold font-lora mb-4">
               Our Vision
             </h2>
@@ -127,8 +130,9 @@ function AboutPage() {
           </div>
         </div>
       </div>
+      {/* End of Our Vision Section */}
 
-      {/* New Section with Cards */}
+      {/* Our Values Section */}
       <div className="bg-[#EAEFFF] py-12">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-semibold font-lora mb-4">Our Values</h2>
@@ -172,23 +176,24 @@ function AboutPage() {
           </div>
         </div>
       </div>
+      {/* End of Our Values Section */}
 
-      {/* New Section with Two Images Side by Side */}
+      {/* The Team Section */}
       <div className="py-12">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold font-lora mb-4">The Team</h2>
         </div>
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center -mx-4">
-            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 flex">
+          <div className="flex flex-wrap justify-center -mx-1">
+            <div className="w-full md:w-2/3 lg:w-1/2 px-1 mb-8 flex justify-center">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <img
                   src="/pastorpaul.png"
                   alt="Paul Baek"
                   className="w-full h-auto"
-                  style={{ height: "300px", objectFit: "cover" }}
+                  style={{ height: "350px", objectFit: "cover" }}
                 />
-                <div className="p-4 text-center flex-grow flex flex-col justify-between">
+                <div className="p-6 text-center flex-grow flex flex-col justify-between">
                   <div>
                     <h3 className="text-xl font-bold font-lora mt-4">Pastor</h3>
                     <h3 className="text-lg font-semibold font-lora mt-4">
@@ -201,15 +206,15 @@ function AboutPage() {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 flex">
+            <div className="w-full md:w-2/3 lg:w-1/2 px-1 mb-8 flex justify-center">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <img
                   src="/joo.png"
                   alt="JooHyeng Lee"
                   className="w-full h-auto"
-                  style={{ height: "300px", objectFit: "cover" }}
+                  style={{ height: "350px", objectFit: "cover" }}
                 />
-                <div className="p-4 text-center flex-grow flex flex-col justify-between">
+                <div className="p-6 text-center flex-grow flex flex-col justify-between">
                   <div>
                     <h3 className="text-xl font-bold font-lora mt-4">
                       President
@@ -227,29 +232,47 @@ function AboutPage() {
           </div>
         </div>
       </div>
-      {/* New Background Section */}
+      {/* End of Our Team Section */}
+
+      {/* Connect with Us Section */}
       <div
-        className="flex items-center justify-center text-center text-white py-24"
+        className="flex items-center justify-center py-12"
         style={{
-          backgroundImage: `url('/taz.png')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          position: "relative",
+          height: "500px",
         }}
       >
-        <div className="max-w-3xl px-4">
-          <h2 className="text-4xl font-bold mb-4">Connect with Us</h2>
-          <p className="text-lg mb-8">
-            We would love to get to know you! Join our email list and keep
-            up-to-date with everything happening at Calvary
-          </p>
+        {/* Background image container with filter */}
+        <div
+          className="absolute top-0 left-0 w-full h-full"
+          style={{
+            backgroundImage: `url('/taz.png')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "brightness(50%)", // Adjust the brightness percentage as needed
+          }}
+        />
+
+        {/* Content */}
+        <div className="relative text-center text-white">
+          <h2 className="text-3xl font-bold font-lora mb-4">
+            Connect with us!
+          </h2>
+          <div className="max-w-lg mx-auto">
+            <p className="text-lg font-medium font-lora mb-4">
+              We would love to get to know you! Join our email list and keep
+              up-to-date with everything happening at Calvary.
+            </p>
+          </div>
           <Link
-            to="/about"
-            className="bg-transparent hover:bg-blue-200 text-white font-bold py-2 px-4 rounded inline-block mt-4  border-white border-solid border-2"
+            to="/"
+            className="bg-transparent hover:bg-blue-200 text-xl text-white font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-white border-solid border-2"
           >
             Connect
           </Link>
         </div>
       </div>
+      {/* End of Connect with Us Section */}
     </div>
   );
 }

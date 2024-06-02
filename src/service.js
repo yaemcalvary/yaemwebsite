@@ -25,8 +25,9 @@ function ServicePage() {
           </h1>
         </div>
       </div>
+      {/* End of Hero Section */}
 
-      {/* Split Section */}
+      {/* Split Section with Text and Map */}
       <div className="flex flex-col md:flex-row py-12">
         <div className="w-full md:w-1/2 p-8">
           <h2 className="text-2xl font-bold font-lora mb-4">
@@ -58,6 +59,7 @@ function ServicePage() {
           ></iframe>
         </div>
       </div>
+      {/* End of Split Section */}
 
       {/* Image Carousel Section */}
       <div className="py-12">
@@ -87,7 +89,7 @@ function ServicePage() {
               </div>
               <div>
                 <img src="/onStairs.png" alt="On Stairs" />
-                <p className="legend">On Stairs</p>
+                <p className="legend">Going up Stairs</p>
               </div>
               <div>
                 <img src="/lobby.png" alt="Lobby" />
@@ -105,9 +107,9 @@ function ServicePage() {
           </div>
         </div>
       </div>
-      {/* end of section */}
+      {/* End of Image Carousel Section */}
 
-      {/* New Section */}
+      {/* New Here Section */}
       <div className="bg-[#C3D0FF59] flex items-center justify-center py-12">
         <div className="text-center">
           <h2 className="text-3xl font-semibold font-lora mb-4">
@@ -119,35 +121,53 @@ function ServicePage() {
           </p>
           <Link
             to="/service"
-            className="bg-transparent hover:bg-blue-200 text-[#004686] font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
+            className="bg-transparent hover:bg-blue-200 text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
           >
             Plan A Visit
           </Link>
         </div>
       </div>
-      {/* New Background Section */}
+      {/* End of New Here Section */}
+
+      {/* Connect with Us Section */}
       <div
-        className="flex items-center justify-center text-center text-white py-24"
+        className="flex items-center justify-center py-12"
         style={{
-          backgroundImage: `url('/taz.png')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          position: "relative",
+          height: "500px",
         }}
       >
-        <div className="max-w-3xl px-4">
-          <h2 className="text-4xl font-bold mb-4">Connect with Us</h2>
-          <p className="text-lg mb-8">
-            We would love to get to know you! Join our email list and keep
-            up-to-date with everything happening at Calvary
-          </p>
+        {/* Background image container with filter */}
+        <div
+          className="absolute top-0 left-0 w-full h-full"
+          style={{
+            backgroundImage: `url('/taz.png')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "brightness(50%)", // Adjust the brightness percentage as needed
+          }}
+        />
+
+        {/* Content */}
+        <div className="relative text-center text-white">
+          <h2 className="text-3xl font-bold font-lora mb-4">
+            Connect with us!
+          </h2>
+          <div className="max-w-lg mx-auto">
+            <p className="text-lg font-medium font-lora mb-4">
+              We would love to get to know you! Join our email list and keep
+              up-to-date with everything happening at Calvary.
+            </p>
+          </div>
           <Link
-            to="/service"
-            className="bg-transparent hover:bg-blue-200 text-white font-bold py-2 px-4 rounded inline-block mt-4  border-white border-solid border-2"
+            to="/"
+            className="bg-transparent hover:bg-blue-200 text-xl text-white font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-white border-solid border-2"
           >
             Connect
           </Link>
         </div>
       </div>
+      {/* End of Connect with Us Section */}
     </div>
   );
 }
