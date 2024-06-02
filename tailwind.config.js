@@ -17,6 +17,9 @@ module.exports = {
         "sf-pro": ['"SF Pro"', "sans-serif"],
         "sf-pro-l": ['"SF Pro Light"', "sans-serif"],
       },
+      borderRadius: {
+        custom: "90px",
+      },
     },
     // Other Tailwind config...
   },

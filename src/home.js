@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "@fontsource/lora";
+import ConnectWithUs from "./ConnectWithUs";
 
 function HomePage() {
   return (
     <div>
       {/* Hero Section */}
       <div
-        className="hero-section flex items-center"
+        className="hero-section flex flex-col items-center justify-center"
         style={{
           backgroundImage: `url('/church2.png')`,
           backgroundSize: "100%",
@@ -15,18 +16,22 @@ function HomePage() {
           height: "600px",
         }}
       >
-        <div className="hero-text text-left ml-8">
-          <h1 className="text-4xl md:text-6xl font-semibold font-lora text-[#333333] mb-4">
-            Welcome to Calvary YAEM!
+        <div className="hero-text text-center mx-auto max-w-xl">
+          <h1 className="text-4xl md:text-5xl font-semibold font-lora text-white mb-4">
+            We are Calvary YAEM!
           </h1>
-          <p className="text-lg font-normal font-lora text-[#333333] max-w-lg">
-            We love God by growing in our knowledge of Him and living in
-            obedience to His Word. We recall His love so that we are driven to
-            love those who are around us.
+          <p className="text-lg font-normal font-lora text-[#525252] mb-4">
+            Sundays 1pm &ensp;|&ensp; 572 Ryders Lane, East Brunswick, NJ
           </p>
+          <div className="bg-[#FFFFFF80] rounded-xl px-4 py-2 mb-4 max-w-lg">
+            <p className="text-lg font-normal font-lora text-[#525252]">
+              Growing in knowledge of God. <br /> Living in obedience to His
+              Word.
+            </p>
+          </div>
           <Link
             to="/service"
-            className="text-xl bg-transparent hover:bg-blue-200 text-white font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-white border-solid border-2"
+            className="text-xl bg-transparent hover:bg-blue-200 text-white font-bold font-lora py-2 px-4 rounded inline-block border-white border-solid border-2"
           >
             About Service
           </Link>
@@ -35,7 +40,7 @@ function HomePage() {
       {/* End of Hero Section */}
 
       {/* Get to know us Section */}
-      <div className="flex">
+      <div className="flex py-20">
         {/* Left Half */}
         <div className="w-1/2 p-8 flex flex-col items-center justify-center">
           <div className="text-center">
@@ -43,26 +48,31 @@ function HomePage() {
               Get to know us!
             </h2>
             <p className="text-lg font-normal font-lora max-w-lg mx-auto">
-              Learn about our mission, our beliefs, <br />
-              and the hope we have in Jesus.
+              We love God by growing in our knowledge of Him and living in
+              obedience to his Word. We recall His love so that we are driven to
+              love those who are around us.
             </p>
             <Link
               to="/about"
               className="bg-white hover:bg-blue-200 text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
             >
-              Learn More
+              About Us
             </Link>
           </div>
         </div>
         {/* Right Half (Image) */}
         <div className="w-1/2">
-          <img src="/groupPicture.png" alt="Group" className="w-full h-auto" />
+          <img
+            src="/groupPicture.png"
+            alt="Group"
+            className="w-full h-auto rounded-custom"
+          />
         </div>
       </div>
       {/* End of Get to know us Section */}
 
       {/* New Here Section */}
-      <div className="bg-[#C3D0FF59] flex items-center justify-center py-12">
+      <div className="bg-[#C3D0FF59] flex items-center justify-center py-32">
         <div className="text-center">
           <h2 className="text-3xl font-semibold font-lora mb-4">
             New here? Let us know!
@@ -81,89 +91,56 @@ function HomePage() {
       </div>
       {/* End of New Here Section */}
 
-      {/* Events Section */}
-      <div className="flex justify-center items-center min-h-screen">
-        {/* Left Half with Image and Text */}
-        <div className="w-1/2 p-8">
-          <Link to="/events">
-            <div className="relative">
-              <img
-                src="/michael.png"
-                alt="Events"
-                className="w-full h-auto rounded-2xl"
-              />
-              <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center">
-                <div className="text-white text-center">
-                  <h3 className="text-4xl text-black font-semibold font-lora mb-4 pt-5">
-                    Events
-                  </h3>
-                </div>
-              </div>
-            </div>
+      {/* Events and Prayer Meeting Section */}
+      <div className="section flex flex-col md:flex-row py-16">
+        {/* Left Half */}
+        <div className="left-half md:w-1/2 text-center">
+          <img
+            src="michael.png"
+            alt="Monthly Event"
+            className="w-full h-auto max-w-500 max-h-365 rounded-custom object-cover"
+          />
+          <h2 className="text-2xl font-semibold font-lora mt-4">
+            Monthly Event
+          </h2>
+          <p className="text-lg mt-2 font-lora">
+            Check out our monthly YAEM event calendar for events, retreats and
+            more!
+          </p>
+          <Link
+            to="/events"
+            className="bg-white hover:bg-blue-200 text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
+          >
+            More Info
           </Link>
         </div>
 
-        {/* Right Half with Image and Text */}
-        {/* <div className="w-1/2 p-8">
-          <Link to="/resources">
-            <div className="relative">
-              <img
-                src="/bible.png"
-                alt="Bible"
-                className="w-full h-auto rounded-lg"
-              />
-              <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center">
-                <div className="text-white text-center">
-                  <h3 className="text-3xl text-black font-bold mb-4">
-                    Resources
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div> */}
-      </div>
-      {/* End of Events Section */}
-
-      {/* Connect with Us Section */}
-      <div
-        className="flex items-center justify-center py-12"
-        style={{
-          position: "relative",
-          height: "500px",
-        }}
-      >
-        {/* Background image container with filter */}
-        <div
-          className="absolute top-0 left-0 w-full h-full"
-          style={{
-            backgroundImage: `url('/taz.png')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            filter: "brightness(50%)", // Adjust the brightness percentage as needed
-          }}
-        />
-
-        {/* Content */}
-        <div className="relative text-center text-white">
-          <h2 className="text-3xl font-bold font-lora mb-4">
-            Connect with us!
+        {/* Right Half */}
+        <div className="right-half md:w-1/2 text-center">
+          <img
+            src="table.png"
+            alt="Prayer Meetings"
+            className="w-full h-auto max-w-500 max-h-365 rounded-custom object-cover"
+          />
+          <h2 className="text-2xl font-lora font-semibold mt-4">
+            Prayer Meetings
           </h2>
-          <div className="max-w-lg mx-auto">
-            <p className="text-lg font-medium font-lora mb-4">
-              We would love to get to know you! Join our email list and keep
-              up-to-date with everything happening at Calvary.
-            </p>
-          </div>
+          <p className="text-lg mt-2 font-lora">
+            Join us for a time of prayer and reflection!
+            <br />
+            We meet in-person on select Fridays at 7pm.
+          </p>
           <Link
             to="/"
-            className="bg-transparent hover:bg-blue-200 text-xl text-white font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-white border-solid border-2"
+            className="bg-white hover:bg-blue-200 text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-[#004686] border-solid border-2"
           >
-            Connect
+            More Info
           </Link>
         </div>
       </div>
-      {/* End of Connect with Us Section */}
+      {/* End of Events and Prayer Meeting Section */}
+
+      <ConnectWithUs />
     </div>
   );
 }

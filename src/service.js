@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 import "@fontsource/lora";
+import ConnectWithUs from "./ConnectWithUs";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -10,18 +11,18 @@ function ServicePage() {
     <div>
       {/* Hero Section */}
       <div
-        className="hero-section flex items-center justify-center"
+        className="hero-section flex items-center justify-center bg-[#EAEFFF]"
         style={{
-          backgroundImage: `url('/serviceHero2.png')`,
+          // backgroundImage: `url('/serviceHero2.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "300px",
           position: "relative",
         }}
       >
-        <div className="relative text-center text-[#333333]">
-          <h1 className="text-3xl md:text-4xl font-normal font-lora">
-            Service
+        <div className="relative text-center text-[#525252]">
+          <h1 className="text-3xl md:text-4xl font-semibold font-lora">
+            Our Service
           </h1>
         </div>
       </div>
@@ -110,7 +111,7 @@ function ServicePage() {
       {/* End of Image Carousel Section */}
 
       {/* New Here Section */}
-      <div className="bg-[#C3D0FF59] flex items-center justify-center py-12">
+      <div className="bg-[#C3D0FF59] flex items-center justify-center py-20">
         <div className="text-center">
           <h2 className="text-3xl font-semibold font-lora mb-4">
             New here? Let us know!
@@ -129,45 +130,7 @@ function ServicePage() {
       </div>
       {/* End of New Here Section */}
 
-      {/* Connect with Us Section */}
-      <div
-        className="flex items-center justify-center py-12"
-        style={{
-          position: "relative",
-          height: "500px",
-        }}
-      >
-        {/* Background image container with filter */}
-        <div
-          className="absolute top-0 left-0 w-full h-full"
-          style={{
-            backgroundImage: `url('/taz.png')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            filter: "brightness(50%)", // Adjust the brightness percentage as needed
-          }}
-        />
-
-        {/* Content */}
-        <div className="relative text-center text-white">
-          <h2 className="text-3xl font-bold font-lora mb-4">
-            Connect with us!
-          </h2>
-          <div className="max-w-lg mx-auto">
-            <p className="text-lg font-medium font-lora mb-4">
-              We would love to get to know you! Join our email list and keep
-              up-to-date with everything happening at Calvary.
-            </p>
-          </div>
-          <Link
-            to="/"
-            className="bg-transparent hover:bg-blue-200 text-xl text-white font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-white border-solid border-2"
-          >
-            Connect
-          </Link>
-        </div>
-      </div>
-      {/* End of Connect with Us Section */}
+      <ConnectWithUs />
     </div>
   );
 }
