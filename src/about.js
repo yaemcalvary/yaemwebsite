@@ -78,7 +78,7 @@ function AboutPage() {
         }}
       >
         <div className="relative text-center text-[#525252]">
-          <h1 className="text-3xl md:text-4xl font-semibold font-lora">
+          <h1 className="text-3xl md:text-4xl font-semibold font-playfair">
             About Us
           </h1>
         </div>
@@ -89,7 +89,7 @@ function AboutPage() {
       <div className="flex pt-10">
         <div className="w-1/2 p-8 flex flex-col justify-center items-center">
           <div className="w-full max-w-md">
-            <h2 className="text-2xl font-semibold font-lora mb-4">
+            <h2 className="text-3xl font-semibold font-lora mb-4">
               Our Mission
             </h2>
             <p className="text-lg font-normal font-lora">
@@ -119,7 +119,7 @@ function AboutPage() {
         </div>
         <div className="w-1/2 p-8 flex flex-col justify-center items-center">
           <div className="w-full max-w-md">
-            <h2 className="text-2xl font-semibold font-lora mb-4">
+            <h2 className="text-3xl font-semibold font-lora mb-4">
               Our Vision
             </h2>
             <p className="text-lg font-normal font-lora">
@@ -186,7 +186,7 @@ function AboutPage() {
         </div>
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center -mx-1">
-            <div className="w-full md:w-2/3 lg:w-1/2 px-1 mb-8 flex justify-center">
+            <div className="w-full md:w-1/2 lg:w-1/3 px-2 mb-8 flex justify-center">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <img
                   src="/pastorpaul.png"
@@ -207,7 +207,7 @@ function AboutPage() {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-2/3 lg:w-1/2 px-1 mb-8 flex justify-center">
+            <div className="w-full md:w-1/2 lg:w-1/3 px-2 mb-8 flex justify-center">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <img
                   src="/joo.png"

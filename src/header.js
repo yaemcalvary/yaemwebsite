@@ -46,25 +46,25 @@ export default function Example() {
         <Popover.Group className="hidden lg:flex lg:gap-x-16">
           <Link
             to="/"
-            className="text-md font-normal font-lora leading-6 text-gray-900"
+            className="text-md font-normal text-lg font-lora leading-6 text-gray-900"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="text-md font-normal font-lora leading-6 text-gray-900"
+            className="text-md font-normal text-lg font-lora leading-6 text-gray-900"
           >
             About
           </Link>
           <Link
             to="/service"
-            className="text-md font-normal font-lora leading-6 text-gray-900"
+            className="text-md font-normal text-lg font-lora leading-6 text-gray-900"
           >
             Service
           </Link>
           <Link
             to="/events"
-            className="text-md font-normal font-lora leading-6 text-gray-900"
+            className="text-md font-normal text-lg font-lora leading-6 text-gray-900"
           >
             Events
           </Link>
@@ -100,14 +100,14 @@ export default function Example() {
               <div className="space-y-2 py-6">
                 <Link
                   to="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-lora font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={handleLinkClick}
                 >
                   Home
                 </Link>
                 <Link
                   to="/about"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-lora font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={handleLinkClick}
                 >
                   About
@@ -115,7 +115,7 @@ export default function Example() {
 
                 <Link
                   to="/service"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-lora font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={handleLinkClick}
                 >
                   Service
@@ -123,7 +123,7 @@ export default function Example() {
 
                 <Link
                   to="/events"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-lora font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={handleLinkClick}
                 >
                   Events

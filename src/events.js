@@ -18,7 +18,7 @@ function EventsPage() {
         }}
       >
         <div className="relative text-center text-[#525252]">
-          <h1 className="text-3xl md:text-4xl font-semibold font-lora">
+          <h1 className="text-3xl md:text-4xl font-semibold font-playfair">
             Events & Meetings
           </h1>
         </div>
@@ -68,7 +68,7 @@ function EventsPage() {
             <div className="text-center">
               <Link
                 to="/events"
-                className="bg-transparent font-lora hover:bg-blue-200 text-xl text-[#0056BB] border-[#0056BB] border-2 font-bold py-2 px-4 rounded"
+                className="bg-transparent font-lora hover:bg-blue-200 text-xl text-[#0056BB] border-[#0056BB] border-2.5 font-bold py-2 px-4 rounded-lg"
               >
                 Connect
               </Link>

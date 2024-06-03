@@ -16,9 +16,13 @@ module.exports = {
         "source-serif": ["Source Serif Pro", "serif"],
         "sf-pro": ['"SF Pro"', "sans-serif"],
         "sf-pro-l": ['"SF Pro Light"', "sans-serif"],
+        playfair: ['"Playfair Display"', "serif"],
       },
       borderRadius: {
         custom: "90px",
+      },
+      borderWidth: {
+        2.5: "2.5px", // Example custom border width
       },
     },
     // Other Tailwind config...

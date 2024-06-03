@@ -36,7 +36,7 @@ function ConnectWithUs() {
           </div>
           <Link
             to="/"
-            className="bg-transparent hover:bg-blue-200 text-xl text-white font-bold font-lora py-2 px-4 rounded inline-block mt-4 border-white border-solid border-2"
+            className="bg-transparent hover:bg-blue-200 text-xl text-white font-semibold font-lora py-3 px-5 rounded-lg inline-block mt-4 border-white border-solid border-2.5"
           >
             Connect
           </Link>
