@@ -9,16 +9,16 @@ function HomePage() {
     <div>
       {/* Hero Section */}
       <div
-        className="hero-section flex flex-col items-center justify-center"
+        className="hero-section flex flex-col items-center justify-center text-center py-10"
         style={{
-          backgroundImage: `url('/church2.png')`,
-          backgroundSize: "100%",
+          backgroundImage: `url('/church3.png')`,
+          backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "600px",
+          height: "500px",
         }}
       >
-        <div className="hero-text text-center mx-auto max-w-xl">
-          <h1 className="text-4xl md:text-5xl font-semibold font-playfair text-white mb-4">
+        <div className="hero-text text-center mx-auto max-w-xl p-4">
+          <h1 className="text-4xl md:text-5xl font-semibold font-playfair text-[#004686] mb-4">
             We are Calvary YAEM!
           </h1>
           <p className="text-lg font-normal font-lora text-[#525252] mb-4">
@@ -32,7 +32,7 @@ function HomePage() {
           </div>
           <Link
             to="/service"
-            className="text-xl bg-transparent hover:bg-blue-200 text-white font-bold font-lora py-2 px-6 rounded-lg inline-block border-white border-solid border-2.5"
+            className="text-xl bg-transparent hover:border-[#004686] hover:bg-[#004686] hover:text-white text-white font-bold font-lora py-2 px-6 rounded-lg inline-block border-white border-solid border-2.5"
           >
             About Service
           </Link>
@@ -41,9 +41,9 @@ function HomePage() {
       {/* End of Hero Section */}
 
       {/* Get to know us Section */}
-      <div className="flex py-20">
+      <div className="flex flex-col md:flex-row py-20">
         {/* Left Half */}
-        <div className="w-1/2 p-8 flex flex-col items-center justify-center">
+        <div className="md:w-1/2 p-8 flex flex-col items-center justify-center">
           <div className="text-center">
             <h2 className="text-3xl font-semibold font-lora mb-4">
               Get to know us!
@@ -55,14 +55,14 @@ function HomePage() {
             </p>
             <Link
               to="/about"
-              className="bg-white hover:bg-blue-200 text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
+              className="bg-white hover:bg-[#004686] hover:text-white text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
             >
               About Us
             </Link>
           </div>
         </div>
         {/* Right Half (Image) */}
-        <div className="w-1/2">
+        <div className="md:w-1/2 p-4">
           <img
             src="/groupPicture.png"
             alt="Group"
@@ -77,7 +77,7 @@ function HomePage() {
       {/* Events and Prayer Meeting Section */}
       <div className="section flex flex-col md:flex-row py-16">
         {/* Left Half */}
-        <div className="left-half md:w-1/2 text-center flex flex-col items-center">
+        <div className="md:w-1/2 text-center flex flex-col items-center p-4">
           <div className="image-container w-full max-w-md">
             <img
               src="michael.png"
@@ -96,14 +96,14 @@ function HomePage() {
           </p>
           <Link
             to="/events"
-            className="bg-white hover:bg-blue-200 text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
+            className="bg-white hover:bg-[#004686] hover:text-white text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
           >
             More Info
           </Link>
         </div>
 
         {/* Right Half */}
-        <div className="right-half md:w-1/2 text-center flex flex-col items-center">
+        <div className="md:w-1/2 text-center flex flex-col items-center p-4">
           <div className="image-container w-full max-w-md">
             <img
               src="table.png"
@@ -122,7 +122,7 @@ function HomePage() {
           </p>
           <Link
             to="/"
-            className="bg-white hover:bg-blue-200 text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
+            className="bg-white hover:bg-[#004686] hover:text-white text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
           >
             More Info
           </Link>

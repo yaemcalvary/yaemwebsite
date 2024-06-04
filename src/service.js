@@ -66,7 +66,7 @@ function ServicePage() {
       {/* Image Carousel Section */}
       <div className="py-12">
         <div className="container mx-auto px-4">
-          <div className="max-w-lg mx-auto">
+          <div className="max-w-2xl mx-auto">
             <Carousel
               showThumbs={false}
               infiniteLoop
@@ -74,35 +74,51 @@ function ServicePage() {
               autoPlay
             >
               <div>
-                <img src="/stairs.png" alt="Stairs" />
+                <img src="/stairs.png" alt="Stairs" className="w-full h-auto" />
                 <p className="legend">Stairs</p>
               </div>
               <div>
-                <img src="/stairsEntrance.png" alt="Stairs Entrance" />
+                <img
+                  src="/stairsEntrance.png"
+                  alt="Stairs Entrance"
+                  className="w-full h-auto"
+                />
                 <p className="legend">Main Lobby</p>
               </div>
               <div>
-                <img src="/hallway.png" alt="Hallway" />
+                <img
+                  src="/hallway.png"
+                  alt="Hallway"
+                  className="w-full h-auto"
+                />
                 <p className="legend">Hallway</p>
               </div>
               <div>
-                <img src="/insideStairs.png" alt="Inside Stairs" />
+                <img
+                  src="/insideStairs.png"
+                  alt="Inside Stairs"
+                  className="w-full h-auto"
+                />
                 <p className="legend">Inside Stairs</p>
               </div>
               <div>
-                <img src="/onStairs.png" alt="On Stairs" />
+                <img
+                  src="/onStairs.png"
+                  alt="On Stairs"
+                  className="w-full h-auto"
+                />
                 <p className="legend">Going up Stairs</p>
               </div>
               <div>
-                <img src="/lobby.png" alt="Lobby" />
+                <img src="/lobby.png" alt="Lobby" className="w-full h-auto" />
                 <p className="legend">Lobby</p>
               </div>
               <div>
-                <img src="/doors.png" alt="Doors" />
+                <img src="/doors.png" alt="Doors" className="w-full h-auto" />
                 <p className="legend">Doors</p>
               </div>
               <div>
-                <img src="/chapel.png" alt="Chapel" />
+                <img src="/chapel.png" alt="Chapel" className="w-full h-auto" />
                 <p className="legend">Chapel</p>
               </div>
             </Carousel>

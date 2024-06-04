@@ -20,7 +20,7 @@ function AboutPage() {
       name: "The Trinity",
       description:
         "There is one eternal God, existing in three persons—Father, Son, and Holy Spirit—each deserving equal love, honor, and worship.",
-      height: "160px",
+      height: "100px",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ function AboutPage() {
       name: "The Fall",
       description:
         "All humanity shares in Adam's original sin, leading to a state of lostness and helplessness.",
-      height: "120px",
+      height: "100px",
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ function AboutPage() {
       name: "God's Mercy and Grace",
       description:
         "Out of His boundless love and mercy, God sovereignly chooses sinners from every nation for redemption through the Holy Spirit's work and Jesus Christ's atoning sacrifice.",
-      height: "110px",
+      height: "100px",
     },
     {
       id: 5,
@@ -44,7 +44,7 @@ function AboutPage() {
       name: "Being Born Again",
       description:
         "Those quickened by the Spirit, upon hearing the Word of God, believe in Christ as their Savior, are born anew, adopted as God's children, and will persevere until the end.",
-      height: "130px",
+      height: "100px",
     },
     {
       id: 6,
@@ -52,7 +52,7 @@ function AboutPage() {
       name: "Justification",
       description:
         "Justification comes by faith, wherein the undeserving sinner is covered with Christ's righteousness",
-      height: "140px",
+      height: "100px",
     },
     {
       id: 7,
@@ -60,7 +60,7 @@ function AboutPage() {
       name: "Sanctification",
       description:
         "The aim of God's salvation is holiness, good deeds, and service to glorify Him in the believer's life.",
-      height: "120px",
+      height: "100px",
     },
   ];
 
@@ -86,7 +86,7 @@ function AboutPage() {
       {/* End of Hero Section */}
 
       {/* Our Mission Section */}
-      <div className="flex pt-10">
+      <div className="flex pt-20">
         <div className="w-1/2 p-8 flex flex-col justify-center items-center">
           <div className="w-full max-w-md">
             <h2 className="text-3xl font-semibold font-lora mb-4">
@@ -109,7 +109,7 @@ function AboutPage() {
       {/* End of Our Mission Section */}
 
       {/* Our Vision Section */}
-      <div className="flex py-10">
+      <div className="flex pb-20">
         <div className="w-1/2">
           <img
             src="/churchBotLeft.png"
@@ -136,7 +136,7 @@ function AboutPage() {
       {/* Our Values Section */}
       <div className="bg-[#EAEFFF] py-28">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-semibold font-lora mb-4">Our Values</h2>
+          <h2 className="text-4xl font-semibold font-lora mb-4">Our Values</h2>
           <p className="text-lg font-normal font-lora">
             At Calvary YAEM, we believe in these seven values
           </p>
@@ -149,8 +149,8 @@ function AboutPage() {
                 className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8"
               >
                 <div
-                  className="rounded-lg shadow-lg overflow-hidden"
-                  style={{ background: "white", height: "300px" }}
+                  className="rounded-xl shadow-lg overflow-hidden pt-6 px-4"
+                  style={{ background: "white", height: "320px" }}
                 >
                   <div className="relative">
                     <img
@@ -159,9 +159,9 @@ function AboutPage() {
                       className="w-full object-contain"
                       style={{ height: member.height }}
                     />
-                    <div className="absolute top-0 left-0 p-4 text-white text-2xl font-bold bg-black bg-opacity-50 rounded-full">
+                    {/* <div className="absolute top-0 left-0 p-4 text-white text-2xl font-lora font-bold bg-black bg-opacity-50 rounded-full">
                       {member.id}
-                    </div>
+                    </div> */}
                   </div>
                   <div className="p-4">
                     <h3 className="text-xl font-bold font-lora mb-2">
@@ -180,9 +180,9 @@ function AboutPage() {
       {/* End of Our Values Section */}
 
       {/* The Team Section */}
-      <div className="py-16">
+      <div className="py-20">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold font-lora mb-4">The Team</h2>
+          <h2 className="text-4xl font-bold font-lora mb-4">The Team</h2>
         </div>
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center -mx-1">
@@ -196,7 +196,9 @@ function AboutPage() {
                 />
                 <div className="p-6 text-center flex-grow flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl font-bold font-lora mt-4">Pastor</h3>
+                    <h3 className="text-2xl font-bold font-lora mt-4">
+                      Pastor
+                    </h3>
                     <h3 className="text-lg font-semibold font-lora mt-4">
                       Paul Baek
                     </h3>
@@ -217,7 +219,7 @@ function AboutPage() {
                 />
                 <div className="p-6 text-center flex-grow flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl font-bold font-lora mt-4">
+                    <h3 className="text-2xl font-bold font-lora mt-4">
                       President
                     </h3>
                     <h3 className="text-lg font-semibold font-lora mt-4">

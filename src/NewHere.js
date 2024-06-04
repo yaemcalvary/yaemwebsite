@@ -16,8 +16,8 @@ function NewHere() {
             information below so that we can prepare for your visit.
           </p>
           <Link
-            to="/"
-            className="bg-transparent hover:bg-blue-200 text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
+            to=""
+            className="bg-transparent hover:bg-[#004686] hover:text-white text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
           >
             Plan A Visit
           </Link>

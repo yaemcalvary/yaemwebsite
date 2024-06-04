@@ -84,7 +84,7 @@ export default function Example() {
               onClick={handleLinkClick}
             >
               <img className="h-8 w-auto" src="/yaemlogo.png" alt="YAEM Logo" />
-              <span className="font-bold text-xl">Calvary YAEM</span>
+              <span className="font-bold font-lora text-xl">Calvary YAEM</span>
             </Link>
             <button
               type="button"

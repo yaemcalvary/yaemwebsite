@@ -26,7 +26,7 @@ function EventsPage() {
       {/* End of Hero Section */}
 
       {/* Calendar Section */}
-      <div className="py-12 bg-gray-100">
+      <div className="py-12 bg-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold font-lora mb-4">Our Events</h2>
           <div className="flex justify-center">
@@ -44,39 +44,36 @@ function EventsPage() {
       </div>
       {/* End of Calendar Section */}
 
-      {/* Split Section with Image and Text  */}
-      <div className="flex">
-        {/* Left Half Image */}
-        <div className="w-1/2">
+      {/* Get to know us Section */}
+      <div className="flex flex-col md:flex-row py-20">
+        {/* Right Half (Image) */}
+        <div className="md:w-1/2 p-4">
           <img
             src="/volleyball.png"
             alt="Volleyball"
-            className="w-full h-auto"
+            className="w-full h-auto rounded-custom"
           />
         </div>
-        {/* Right Half */}
-        <div className="w-1/2 bg-[#C3D0FF59] p-8 flex flex-col justify-center items-center">
-          <div className="w-full max-w-lg text-center">
-            <h3 className="text-2xl font-bold font-lora mb-4">
+        {/* Left Half */}
+        <div className="md:w-1/2 p-8 flex flex-col items-center justify-center">
+          <div className="text-center">
+            <h2 className="text-3xl font-semibold font-lora mb-4">
               First time joining our events?
-            </h3>
-            <p className="text-lg font-lora mb-4">
-              Let us know by filling out this form!
-              <br />
-              We will be ready to welcome you the best way we can.
+            </h2>
+            <p className="text-lg font-normal font-lora max-w-lg mx-auto">
+              Let us know by filling out this form! We will be ready to welcome
+              you the best way we can.
             </p>
-            <div className="text-center">
-              <Link
-                to="/events"
-                className="bg-transparent font-lora hover:bg-blue-200 text-xl text-[#0056BB] border-[#0056BB] border-2.5 font-bold py-2 px-4 rounded-lg"
-              >
-                Connect
-              </Link>
-            </div>
+            <Link
+              to="/events"
+              className="bg-white hover:bg-[#004686] hover:text-white text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
+            >
+              Connect
+            </Link>
           </div>
         </div>
       </div>
-      {/* End of Split Section */}
+      {/* End of Get to know us Section */}
 
       <ConnectWithUs />
     </div>
