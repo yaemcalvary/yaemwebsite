@@ -9,17 +9,18 @@ function ConnectWithUs() {
         className="flex items-center justify-center py-12"
         style={{
           position: "relative",
-          height: "350px",
+          height: "400px",
         }}
       >
         {/* Background image container with filter */}
         <div
           className="absolute top-0 left-0 w-full h-full"
           style={{
-            backgroundImage: `url('/taz.png')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            filter: "brightness(50%)", // Adjust the brightness percentage as needed
+            backgroundImage: `url('/taz2.png')`,
+            backgroundSize: "110%", // Adjust this value to control the zoom level
+            backgroundPosition: "10% center", // Shift the image to the right
+            backgroundRepeat: "no-repeat",
+            filter: "brightness(0.5)", // Increase the brightness (adjust the percentage as needed)
           }}
         />
 

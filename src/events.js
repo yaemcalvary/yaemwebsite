@@ -10,14 +10,13 @@ function EventsPage() {
       <div
         className="hero-section flex items-center justify-center bg-[#EAEFFF]"
         style={{
-          // backgroundImage: `url('/eventHero.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "300px",
           position: "relative",
         }}
       >
-        <div className="relative text-center text-[#525252]">
+        <div className="relative text-center text-[#525252] px-4">
           <h1 className="text-3xl md:text-4xl font-semibold font-playfair">
             Events & Meetings
           </h1>
@@ -27,15 +26,15 @@ function EventsPage() {
 
       {/* Calendar Section */}
       <div className="py-12 bg-white">
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto text-center px-4">
           <h2 className="text-3xl font-bold font-lora mb-4">Our Events</h2>
-          <div className="flex justify-center">
+          <div className="flex justify-center overflow-hidden">
             <iframe
               src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York"
               style={{ border: "0" }}
-              width="800"
+              width="100%"
               height="600"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
               title="calendar"
             ></iframe>
@@ -45,7 +44,7 @@ function EventsPage() {
       {/* End of Calendar Section */}
 
       {/* Get to know us Section */}
-      <div className="flex flex-col md:flex-row py-20">
+      <div className="flex flex-col md:flex-row py-20 items-center">
         {/* Right Half (Image) */}
         <div className="md:w-1/2 p-4">
           <img

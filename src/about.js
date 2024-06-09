@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import "@fontsource/lora";
 import ConnectWithUs from "./ConnectWithUs";
 
@@ -70,7 +69,6 @@ function AboutPage() {
       <div
         className="hero-section flex items-center justify-center bg-[#EAEFFF]"
         style={{
-          // backgroundImage: `url('/michael.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "300px",
@@ -86,8 +84,8 @@ function AboutPage() {
       {/* End of Hero Section */}
 
       {/* Our Mission Section */}
-      <div className="flex pt-20">
-        <div className="w-1/2 p-8 flex flex-col justify-center items-center">
+      <div className="flex flex-col lg:flex-row pt-20 px-4 lg:px-8">
+        <div className="lg:w-1/2 p-8 flex flex-col justify-center items-center">
           <div className="w-full max-w-md">
             <h2 className="text-3xl font-semibold font-lora mb-4">
               Our Mission
@@ -98,10 +96,10 @@ function AboutPage() {
             </p>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <img
             src="/churchTopRight.png"
-            alt="Our Mission"
+            alt="Church"
             className="w-full h-auto rounded-custom"
           />
         </div>
@@ -109,15 +107,15 @@ function AboutPage() {
       {/* End of Our Mission Section */}
 
       {/* Our Vision Section */}
-      <div className="flex pb-20">
-        <div className="w-1/2">
+      <div className="flex flex-col lg:flex-row pb-20 px-4 lg:px-8">
+        <div className="lg:w-1/2 order-2 lg:order-1">
           <img
             src="/churchBotLeft.png"
-            alt="Our Vision"
+            alt="Church"
             className="w-full h-auto rounded-custom"
           />
         </div>
-        <div className="w-1/2 p-8 flex flex-col justify-center items-center">
+        <div className="lg:w-1/2 order-1 lg:order-2 p-8 flex flex-col justify-center items-center">
           <div className="w-full max-w-md">
             <h2 className="text-3xl font-semibold font-lora mb-4">
               Our Vision
@@ -134,14 +132,14 @@ function AboutPage() {
       {/* End of Our Vision Section */}
 
       {/* Our Values Section */}
-      <div className="bg-[#EAEFFF] py-28">
+      <div className="bg-[#EAEFFF] py-28 px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-semibold font-lora mb-4">Our Values</h2>
           <p className="text-lg font-normal font-lora">
             At Calvary YAEM, we believe in these seven values
           </p>
         </div>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4">
             {teamMembers.map((member) => (
               <div
@@ -159,9 +157,6 @@ function AboutPage() {
                       className="w-full object-contain"
                       style={{ height: member.height }}
                     />
-                    {/* <div className="absolute top-0 left-0 p-4 text-white text-2xl font-lora font-bold bg-black bg-opacity-50 rounded-full">
-                      {member.id}
-                    </div> */}
                   </div>
                   <div className="p-4">
                     <h3 className="text-xl font-bold font-lora mb-2">
@@ -180,11 +175,11 @@ function AboutPage() {
       {/* End of Our Values Section */}
 
       {/* The Team Section */}
-      <div className="py-20">
+      <div className="py-20 px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold font-lora mb-4">The Team</h2>
         </div>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="flex flex-wrap justify-center -mx-1">
             <div className="w-full md:w-1/2 lg:w-1/3 px-2 mb-8 flex justify-center">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
@@ -196,11 +191,11 @@ function AboutPage() {
                 />
                 <div className="p-6 text-center flex-grow flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-bold font-lora mt-4">
-                      Pastor
-                    </h3>
-                    <h3 className="text-lg font-semibold font-lora mt-4">
+                    <h3 className="text-2xl font-bold font-lora mt-2">
                       Paul Baek
+                    </h3>
+                    <h3 className="text-lg font-normal italic font-lora mt-1">
+                      Pastor
                     </h3>
                   </div>
                   <p className="text-lg text-gray-700 font-lora mt-4">
@@ -219,11 +214,11 @@ function AboutPage() {
                 />
                 <div className="p-6 text-center flex-grow flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-bold font-lora mt-4">
-                      President
-                    </h3>
-                    <h3 className="text-lg font-semibold font-lora mt-4">
+                    <h3 className="text-2xl font-bold font-lora mt-2">
                       JooHyeng Lee
+                    </h3>
+                    <h3 className="text-lg font-normal italic font-lora mt-1">
+                      President
                     </h3>
                   </div>
                   <p className="text-lg text-gray-700 font-lora mt-4">

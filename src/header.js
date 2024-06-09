@@ -20,15 +20,15 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <Link
             to="/"
-            className="flex items-center space-x-4"
+            className="flex items-center space-x-3"
             onClick={handleLinkClick}
           >
             <img
-              className="h-8 w-auto"
+              className="h-10 w-auto"
               src="/yaemlogo.png"
               alt="Calvary Logo"
             />
-            <span className="font-semibold font-lora text-xl">
+            <span className="font-semibold font-lora text-2xl">
               Calvary YAEM
             </span>
           </Link>
@@ -43,7 +43,7 @@ export default function Example() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-16">
+        <Popover.Group className="hidden lg:flex lg:gap-x-16 pt-1">
           <Link
             to="/"
             className="text-md font-normal text-lg font-lora leading-6 text-gray-900"

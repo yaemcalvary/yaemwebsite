@@ -9,16 +9,28 @@ function HomePage() {
     <div>
       {/* Hero Section */}
       <div
-        className="hero-section flex flex-col items-center justify-center text-center py-10"
+        className="hero-section flex flex-col items-center justify-center text-center py-10 relative overflow-hidden"
         style={{
-          backgroundImage: `url('/church3.png')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "500px",
+          height: "550px",
         }}
       >
-        <div className="hero-text text-center mx-auto max-w-xl p-4">
-          <h1 className="text-4xl md:text-5xl font-semibold font-playfair text-[#004686] mb-4">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url('/church4.png')`,
+            backgroundSize: "130%", // Adjust this value to control the zoom level
+            backgroundPosition: "right 8% bottom 55%", // Shift the image to the left
+            backgroundRepeat: "no-repeat",
+            opacity: "0.8",
+            filter: "brightness(1.2) contrast(1.1) saturate(1.6)", // Increase brightness (adjust the value as needed)
+            zIndex: 1,
+          }}
+        ></div>
+
+        {/* Hero Text Content */}
+        <div className="hero-text text-center mx-auto max-w-xl p-4 relative z-10">
+          <h1 className="text-4xl md:text-5xl font-semibold font-lora text-[#004686] mb-4">
             We are Calvary YAEM!
           </h1>
           <p className="text-lg font-normal font-lora text-[#525252] mb-4">
@@ -32,7 +44,7 @@ function HomePage() {
           </div>
           <Link
             to="/service"
-            className="text-xl bg-transparent hover:border-[#004686] hover:bg-[#004686] hover:text-white text-white font-bold font-lora py-2 px-6 rounded-lg inline-block border-white border-solid border-2.5"
+            className="text-xl bg-transparent hover:border-[#004686] hover:bg-[#004686] hover:text-white text-[#004686] font-bold font-lora py-2 px-6 rounded-lg inline-block border-[#004686] border-solid border-2.5"
           >
             About Service
           </Link>
@@ -65,7 +77,7 @@ function HomePage() {
         <div className="md:w-1/2 p-4">
           <img
             src="/groupPicture.png"
-            alt="Group"
+            alt="Group Pic"
             className="w-full h-auto rounded-custom"
           />
         </div>

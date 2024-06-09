@@ -14,14 +14,13 @@ function ServicePage() {
       <div
         className="hero-section flex items-center justify-center bg-[#EAEFFF]"
         style={{
-          // backgroundImage: `url('/serviceHero2.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "300px",
           position: "relative",
         }}
       >
-        <div className="relative text-center text-[#525252]">
+        <div className="relative text-center text-[#525252] px-4">
           <h1 className="text-3xl md:text-4xl font-semibold font-playfair">
             Our Service
           </h1>
@@ -51,12 +50,12 @@ function ServicePage() {
         <div className="w-full md:w-1/2 p-8">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5331370115346!2d-74.42135628837332!3d40.419192171320105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c577e0c24179%3A0x29995c444322d64f!2s572%20Ryders%20Ln%2C%20East%20Brunswick%2C%20NJ%2008816!5e0!3m2!1sen!2sus!4v1717108125643!5m2!1sen!2sus"
-            width="600"
+            width="100%"
             height="450"
-            // style="border:0;"
-            allowfullscreen=""
+            style={{ border: 0 }}
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             title="Calvary"
           ></iframe>
         </div>
@@ -73,54 +72,25 @@ function ServicePage() {
               useKeyboardArrows
               autoPlay
             >
-              <div>
-                <img src="/stairs.png" alt="Stairs" className="w-full h-auto" />
-                <p className="legend">Stairs</p>
-              </div>
-              <div>
-                <img
-                  src="/stairsEntrance.png"
-                  alt="Stairs Entrance"
-                  className="w-full h-auto"
-                />
-                <p className="legend">Main Lobby</p>
-              </div>
-              <div>
-                <img
-                  src="/hallway.png"
-                  alt="Hallway"
-                  className="w-full h-auto"
-                />
-                <p className="legend">Hallway</p>
-              </div>
-              <div>
-                <img
-                  src="/insideStairs.png"
-                  alt="Inside Stairs"
-                  className="w-full h-auto"
-                />
-                <p className="legend">Inside Stairs</p>
-              </div>
-              <div>
-                <img
-                  src="/onStairs.png"
-                  alt="On Stairs"
-                  className="w-full h-auto"
-                />
-                <p className="legend">Going up Stairs</p>
-              </div>
-              <div>
-                <img src="/lobby.png" alt="Lobby" className="w-full h-auto" />
-                <p className="legend">Lobby</p>
-              </div>
-              <div>
-                <img src="/doors.png" alt="Doors" className="w-full h-auto" />
-                <p className="legend">Doors</p>
-              </div>
-              <div>
-                <img src="/chapel.png" alt="Chapel" className="w-full h-auto" />
-                <p className="legend">Chapel</p>
-              </div>
+              {[
+                "stairs.png",
+                "stairsEntrance.png",
+                "hallway.png",
+                "insideStairs.png",
+                "onStairs.png",
+                "lobby.png",
+                "doors.png",
+                "chapel.png",
+              ].map((src, index) => (
+                <div key={index}>
+                  <img
+                    src={`/${src}`}
+                    alt={src.split(".")[0]}
+                    className="w-full h-auto"
+                  />
+                  <p className="legend">{src.split(".")[0]}</p>
+                </div>
+              ))}
             </Carousel>
           </div>
         </div>
