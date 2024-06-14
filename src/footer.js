@@ -9,7 +9,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-center space-y-4 md:space-y-0">
         {/* Left Section: Logo and Calvary YAEM */}
         <div className="flex items-start justify-center space-x-3 md:mr-20">
-          <img src="/yaemlogo.png" alt="Calvary Logo" className="h-8 w-auto" />
+          <img src="/yaemlogo2.png" alt="Calvary Logo" className="h-8 w-auto" />
           <span className="font-bold font-lora text-2xl">Calvary YAEM</span>
         </div>
 
@@ -20,7 +20,7 @@ function Footer() {
           <div className="font-sf-pro-l">
             572 Ryders Lane, East Brunswick, NJ 08816
           </div>
-          <p className="text-gray-600 text-sm font-source-serif mt-4 pt-10">
+          <p className="text-[#888888] text-sm font-source-serif mt-4 pt-10">
             © 2024 Calvary KUMC. All rights reserved
           </p>
         </div>

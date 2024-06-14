@@ -76,7 +76,7 @@ function AboutPage() {
         }}
       >
         <div className="relative text-center text-[#525252]">
-          <h1 className="text-3xl md:text-4xl font-semibold font-playfair">
+          <h1 className="text-3xl md:text-4xl font-semibold font-lora">
             About Us
           </h1>
         </div>
@@ -84,7 +84,7 @@ function AboutPage() {
       {/* End of Hero Section */}
 
       {/* Our Mission Section */}
-      <div className="flex flex-col lg:flex-row pt-20 px-4 lg:px-8">
+      <div className="flex flex-col lg:flex-row px-4 lg:px-8">
         <div className="lg:w-1/2 p-8 flex flex-col justify-center items-center">
           <div className="w-full max-w-md">
             <h2 className="text-3xl font-semibold font-lora mb-4">
@@ -100,19 +100,19 @@ function AboutPage() {
           <img
             src="/churchTopRight.png"
             alt="Church"
-            className="w-full h-auto rounded-custom"
+            className="w-full h-auto"
           />
         </div>
       </div>
       {/* End of Our Mission Section */}
 
       {/* Our Vision Section */}
-      <div className="flex flex-col lg:flex-row pb-20 px-4 lg:px-8">
+      <div className="flex flex-col lg:flex-row px-4 lg:px-8">
         <div className="lg:w-1/2 order-2 lg:order-1">
           <img
             src="/churchBotLeft.png"
             alt="Church"
-            className="w-full h-auto rounded-custom"
+            className="w-full h-auto"
           />
         </div>
         <div className="lg:w-1/2 order-1 lg:order-2 p-8 flex flex-col justify-center items-center">

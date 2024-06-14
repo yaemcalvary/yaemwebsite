@@ -16,7 +16,8 @@ function NewHere() {
             information below so that we can prepare for your visit.
           </p>
           <Link
-            to=""
+            to="https://docs.google.com/forms/d/e/1FAIpQLSeSw9VNf7ZBiIMlPKh9FCKy_fucI0jjgUSHrwL7hokkS_wzGA/viewform"
+            target="_blank"
             className="bg-transparent hover:bg-[#004686] hover:text-white text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
           >
             Plan A Visit

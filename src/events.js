@@ -17,7 +17,7 @@ function EventsPage() {
         }}
       >
         <div className="relative text-center text-[#525252] px-4">
-          <h1 className="text-3xl md:text-4xl font-semibold font-playfair">
+          <h1 className="text-3xl md:text-4xl font-semibold font-lora">
             Events & Meetings
           </h1>
         </div>
@@ -25,37 +25,39 @@ function EventsPage() {
       {/* End of Hero Section */}
 
       {/* Calendar Section */}
-      <div className="py-12 bg-white">
-        <div className="container mx-auto text-center px-4">
-          <h2 className="text-3xl font-bold font-lora mb-4">Our Events</h2>
-          <div className="flex justify-center overflow-hidden">
-            <iframe
-              src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York"
-              style={{ border: "0" }}
-              width="100%"
-              height="600"
-              frameBorder="0"
-              scrolling="no"
-              title="calendar"
-            ></iframe>
+      <div className="pt-12 pb-4 bg-white">
+        <div className="container mx-auto text-left px-8">
+          <div className="flex justify-center">
+            <div className="w-4/5">
+              <h2 className="text-4xl font-bold font-lora mb-4">Our Events</h2>
+              <iframe
+                src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York"
+                style={{ border: "0" }}
+                width="100%"
+                height="600"
+                frameBorder="0"
+                scrolling="no"
+                title="calendar"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
       {/* End of Calendar Section */}
 
       {/* Get to know us Section */}
-      <div className="flex flex-col md:flex-row py-20 items-center">
+      <div className="flex flex-col md:flex-row items-center">
         {/* Right Half (Image) */}
-        <div className="md:w-1/2 p-4">
+        <div className="md:w-1/2 w-full">
           <img
             src="/volleyball.png"
             alt="Volleyball"
-            className="w-full h-auto rounded-custom"
+            className="w-full h-full object-cover"
           />
         </div>
         {/* Left Half */}
-        <div className="md:w-1/2 p-8 flex flex-col items-center justify-center">
-          <div className="text-center">
+        <div className="md:w-1/2 w-full p-8 flex flex-col items-center justify-center">
+          <div className="text-center w-full">
             <h2 className="text-3xl font-semibold font-lora mb-4">
               First time joining our events?
             </h2>

@@ -18,12 +18,12 @@ function HomePage() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `url('/church4.png')`,
-            backgroundSize: "130%", // Adjust this value to control the zoom level
-            backgroundPosition: "right 8% bottom 55%", // Shift the image to the left
+            backgroundImage: `url('/hero.png')`,
+            backgroundSize: "cover", // Adjust this value to control the zoom level
+            backgroundPosition: "left 120% bottom 10%", // Shift the image down and to the left
             backgroundRepeat: "no-repeat",
-            opacity: "0.8",
-            filter: "brightness(1.2) contrast(1.1) saturate(1.6)", // Increase brightness (adjust the value as needed)
+            opacity: "1.0",
+            filter: "blur(0px) brightness(1.0) saturate(1.2)", // Increase brightness (adjust the value as needed)
             zIndex: 1,
           }}
         ></div>
@@ -34,14 +34,15 @@ function HomePage() {
             We are Calvary YAEM!
           </h1>
           <p className="text-lg font-normal font-lora text-[#525252] mb-4">
-            Sundays 1pm &ensp;|&ensp; 572 Ryders Lane, East Brunswick, NJ
+            Sundays 1PM &ensp;|&ensp; 572 Ryders Lane, East Brunswick, NJ
           </p>
-          <div className="bg-[#FFFFFF80] rounded-xl px-4 py-2 mb-4 max-w-sm mx-auto">
+          <div className="bg-[#FFFFFF80] rounded-xl px-4 py-2 mb-4 max-w-xs mx-auto">
             <p className="text-lg font-normal font-lora text-[#525252]">
               Growing in knowledge of God. <br /> Living in obedience to His
               Word.
             </p>
           </div>
+
           <Link
             to="/service"
             className="text-xl bg-transparent hover:border-[#004686] hover:bg-[#004686] hover:text-white text-[#004686] font-bold font-lora py-2 px-6 rounded-lg inline-block border-[#004686] border-solid border-2.5"
@@ -53,7 +54,7 @@ function HomePage() {
       {/* End of Hero Section */}
 
       {/* Get to know us Section */}
-      <div className="flex flex-col md:flex-row py-20">
+      <div className="flex flex-col md:flex-row">
         {/* Left Half */}
         <div className="md:w-1/2 p-8 flex flex-col items-center justify-center">
           <div className="text-center">
@@ -74,11 +75,11 @@ function HomePage() {
           </div>
         </div>
         {/* Right Half (Image) */}
-        <div className="md:w-1/2 p-4">
+        <div className="md:w-1/2">
           <img
             src="/groupPicture.png"
             alt="Group Pic"
-            className="w-full h-auto rounded-custom"
+            className="w-full h-auto "
           />
         </div>
       </div>
@@ -87,9 +88,9 @@ function HomePage() {
       <NewHere />
 
       {/* Events and Prayer Meeting Section */}
-      <div className="section flex flex-col md:flex-row py-16">
+      <div className="section flex flex-col md:flex-row py-16 justify-center">
         {/* Left Half */}
-        <div className="md:w-1/2 text-center flex flex-col items-center p-4">
+        <div className="md:w-1/2 text-center flex flex-col items-center p-4 md:pl-56">
           <div className="image-container w-full max-w-md">
             <img
               src="michael.png"
@@ -115,7 +116,7 @@ function HomePage() {
         </div>
 
         {/* Right Half */}
-        <div className="md:w-1/2 text-center flex flex-col items-center p-4">
+        <div className="md:w-1/2 text-center flex flex-col items-center p-4 md:pr-56">
           <div className="image-container w-full max-w-md">
             <img
               src="table.png"

@@ -24,8 +24,8 @@ export default function Example() {
             onClick={handleLinkClick}
           >
             <img
-              className="h-10 w-auto"
-              src="/yaemlogo.png"
+              className="h-8 w-auto"
+              src="/yaemlogo2.png"
               alt="Calvary Logo"
             />
             <span className="font-semibold font-lora text-2xl">
