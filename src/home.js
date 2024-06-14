@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "@fontsource/lora";
 import ConnectWithUs from "./ConnectWithUs";
 import NewHere from "./NewHere";
 
 function HomePage() {
+  useEffect(() => {
+    const updateBackgroundStyles = () => {
+      const bgImage = document.getElementById("backgroundImage");
+      const width = window.innerWidth;
+
+      if (width <= 480) {
+        bgImage.style.backgroundSize = "600%";
+        bgImage.style.backgroundPosition = "left 13% center";
+      } else if (width <= 768) {
+        bgImage.style.backgroundSize = "150%";
+        bgImage.style.backgroundPosition = "left 25% center";
+      } else {
+        bgImage.style.backgroundSize = "cover";
+        bgImage.style.backgroundPosition = "center";
+      }
+    };
+
+    // Initial call
+    updateBackgroundStyles();
+
+    // Update on resize
+    window.addEventListener("resize", updateBackgroundStyles);
+    return () => window.removeEventListener("resize", updateBackgroundStyles);
+  }, []);
+
   return (
     <div>
       {/* Hero Section */}
@@ -14,16 +39,12 @@ function HomePage() {
           height: "550px",
         }}
       >
-        {/* Background Image */}
         <div
-          className="absolute inset-0"
+          id="backgroundImage"
+          className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url('/hero.png')`,
-            backgroundSize: "cover", // Adjust this value to control the zoom level
-            backgroundPosition: "left 120% bottom 10%", // Shift the image down and to the left
-            backgroundRepeat: "no-repeat",
-            opacity: "1.0",
-            filter: "blur(0px) brightness(1.0) saturate(1.2)", // Increase brightness (adjust the value as needed)
+            filter: "blur(0px) brightness(1.0) saturate(1.2)",
             zIndex: 1,
           }}
         ></div>
@@ -79,7 +100,7 @@ function HomePage() {
           <img
             src="/groupPicture.png"
             alt="Group Pic"
-            className="w-full h-auto "
+            className="w-full h-auto"
           />
         </div>
       </div>
@@ -90,7 +111,7 @@ function HomePage() {
       {/* Events and Prayer Meeting Section */}
       <div className="section flex flex-col md:flex-row py-16 justify-center">
         {/* Left Half */}
-        <div className="md:w-1/2 text-center flex flex-col items-center p-4 md:pl-56">
+        <div className="md:w-1/2 text-center flex flex-col items-center p-4 md:pl-10 lg:pl-48">
           <div className="image-container w-full max-w-md">
             <img
               src="michael.png"
@@ -116,7 +137,7 @@ function HomePage() {
         </div>
 
         {/* Right Half */}
-        <div className="md:w-1/2 text-center flex flex-col items-center p-4 md:pr-56">
+        <div className="md:w-1/2 text-center flex flex-col items-center p-4 md:pr-10 lg:pr-48">
           <div className="image-container w-full max-w-md">
             <img
               src="table.png"

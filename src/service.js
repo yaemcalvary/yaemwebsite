@@ -21,7 +21,7 @@ function ServicePage() {
         }}
       >
         <div className="relative text-center text-[#525252] px-4">
-          <h1 className="text-3xl md:text-4xl font-semibold font-playfair">
+          <h1 className="text-3xl md:text-4xl font-semibold font-lora">
             Our Service
           </h1>
         </div>

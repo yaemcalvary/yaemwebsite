@@ -6,7 +6,7 @@ function ConnectWithUs() {
     <div>
       {/* Connect with Us Section */}
       <div
-        className="flex items-center justify-center py-12"
+        className="flex items-center justify-center"
         style={{
           position: "relative",
           height: "400px",
@@ -36,7 +36,8 @@ function ConnectWithUs() {
             </p>
           </div>
           <Link
-            to=""
+            to="https://docs.google.com/forms/d/e/1FAIpQLSdsrcThxvqQ2EBKKWKPlbp0HwHdDqPjFI3CnlXM_oQ668cqcg/viewform"
+            target="_blank"
             className="bg-transparent hover:border-[#004686] hover:bg-[#004686] text-xl text-white font-semibold font-lora py-3 px-5 rounded-lg inline-block mt-4 border-white border-solid border-2.5"
           >
             Connect
