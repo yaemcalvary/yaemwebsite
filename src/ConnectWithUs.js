@@ -1,4 +1,4 @@
-import { React } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 function ConnectWithUs() {
@@ -17,7 +17,7 @@ function ConnectWithUs() {
           className="absolute top-0 left-0 w-full h-full"
           style={{
             backgroundImage: `url('/taz2.png')`,
-            backgroundSize: "110%", // Adjust this value to control the zoom level
+            backgroundSize: "cover", // Adjust this value to control the zoom level
             backgroundPosition: "10% center", // Shift the image to the right
             backgroundRepeat: "no-repeat",
             filter: "brightness(0.5)", // Increase the brightness (adjust the percentage as needed)
@@ -25,7 +25,7 @@ function ConnectWithUs() {
         />
 
         {/* Content */}
-        <div className="relative text-center text-white">
+        <div className="relative text-center text-white px-6 sm:px-12 md:px-14">
           <h2 className="text-3xl font-bold font-lora mb-4">
             Connect with us!
           </h2>

@@ -32,20 +32,10 @@ function EventsPage() {
               <h2 className="text-3xl md:text-4xl font-bold font-lora mb-4 text-center md:text-left">
                 Our Events
               </h2>
-              <div
-                className="relative"
-                style={{ paddingBottom: "100%", height: 0, overflow: "hidden" }}
-              >
+              <div className="relative pb-[130%] sm:pb-[100%] h-0 overflow-hidden">
                 <iframe
                   src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York"
-                  style={{
-                    border: "0",
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                  }}
+                  className="border-0 absolute top-0 left-0 w-full h-full"
                   frameBorder="0"
                   scrolling="no"
                   title="calendar"
@@ -71,7 +61,10 @@ function EventsPage() {
         <div className="md:w-1/2 w-full order-1 lg:order-2 p-8 flex flex-col items-center justify-center">
           <div className="text-center w-full">
             <h2 className="text-3xl md:text-4xl font-semibold font-lora mb-4">
-              First time joining our events?
+              First time joining
+              <span className="block sm:hidden"></span>{" "}
+              {/* Line break for smaller screens */}
+              our events?
             </h2>
             <p className="text-lg font-normal font-lora max-w-lg mx-auto">
               Let us know by filling out this form! We will be ready to welcome

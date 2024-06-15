@@ -86,7 +86,7 @@ function AboutPage() {
       {/* Our Mission Section */}
       <div className="flex flex-col lg:flex-row px-4 lg:px-8">
         <div className="lg:w-1/2 p-8 flex flex-col justify-center items-center">
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-md text-center lg:text-left">
             <h2 className="text-3xl font-semibold font-lora mb-4">
               Our Mission
             </h2>
@@ -117,7 +117,7 @@ function AboutPage() {
         </div>
         <div className="lg:w-1/2 order-1 lg:order-2 p-8 flex flex-col justify-center items-center">
           <div className="w-full max-w-md">
-            <h2 className="text-3xl font-semibold font-lora mb-4">
+            <h2 className="text-3xl font-semibold font-lora text-center lg:text-left mb-4">
               Our Vision
             </h2>
             <p className="text-lg font-normal font-lora">
@@ -187,19 +187,19 @@ function AboutPage() {
                   src="/pastorpaul.png"
                   alt="Paul Baek"
                   className="w-full h-auto"
-                  style={{ height: "350px", objectFit: "cover" }}
+                  style={{ height: "450px", objectFit: "cover" }}
                 />
                 <div className="p-6 text-center flex-grow flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-bold font-lora mt-2">
+                    <h3 className="text-2xl font-bold font-lora mt-2 mb-1">
                       Paul Baek
                     </h3>
-                    <h3 className="text-lg font-normal italic font-lora mt-1">
+                    <h3 className="text-lg font-normal italic font-lora pt-2 mt-0 mb-2">
                       Pastor
                     </h3>
                   </div>
-                  <p className="text-lg text-gray-700 font-lora mt-4">
-                    Description
+                  <p className="text-lg text-gray-700 font-lora mt-0">
+                    pbaek87@gmail.com
                   </p>
                 </div>
               </div>
@@ -210,19 +210,19 @@ function AboutPage() {
                   src="/joo.png"
                   alt="JooHyeng Lee"
                   className="w-full h-auto"
-                  style={{ height: "350px", objectFit: "cover" }}
+                  style={{ height: "450px", objectFit: "cover" }}
                 />
                 <div className="p-6 text-center flex-grow flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-bold font-lora mt-2">
+                    <h3 className="text-2xl font-bold font-lora mt-2 mb-1">
                       JooHyeng Lee
                     </h3>
-                    <h3 className="text-lg font-normal italic font-lora mt-1">
-                      President
+                    <h3 className="text-lg font-normal italic font-lora pt-2 mt-0 mb-2">
+                      Executive Director
                     </h3>
                   </div>
-                  <p className="text-lg text-gray-700 font-lora mt-4">
-                    Description
+                  <p className="text-lg text-gray-700 font-lora mt-0">
+                    joohlee89@gmail.com
                   </p>
                 </div>
               </div>

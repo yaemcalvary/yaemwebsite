@@ -36,10 +36,14 @@ function ServicePage() {
               Time and Location
             </h2>
             <p className="text-lg mb-8 font-lora">
-              Sundays 1pm
+              Sundays 1:00pm
               <br />
-              572 Ryders Lane, East Brunswick, NJ 08816
+              572 Ryders Lane,
+              <span className="block sm:hidden"></span>{" "}
+              {/* Line break for smaller screens */}
+              East Brunswick, NJ 08816
             </p>
+
             <h2 className="text-3xl font-bold font-lora mb-4">Upon Arrival</h2>
             <p className="text-lg font-lora">
               Once you arrive to Calvary KUMC, you will see the entrance with
@@ -72,7 +76,7 @@ function ServicePage() {
               showThumbs={false}
               infiniteLoop
               useKeyboardArrows
-              autoPlay
+              // autoPlay
             >
               {[
                 "stairs.png",

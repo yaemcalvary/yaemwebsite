@@ -5,8 +5,8 @@ import "@fontsource/source-serif-pro";
 
 function Footer() {
   return (
-    <footer className="bg-[#EAEFFF] py-6 px-4 md:px-10 relative">
-      <div className="max-w-7xl mx-auto flex flex-col pr-12 md:flex-row items-center md:items-start justify-center space-y-4 md:space-y-0">
+    <footer className="bg-[#EAEFFF] py-8 px-4 md:px-10 relative">
+      <div className="max-w-7xl mx-auto flex flex-col lg:pr-12 md:flex-row items-center md:items-start justify-center space-y-4 md:space-y-0">
         {/* Left Section: Logo and Calvary YAEM */}
         <div className="flex items-center justify-center md:mr-20">
           <img

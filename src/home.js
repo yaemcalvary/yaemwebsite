@@ -52,10 +52,16 @@ function HomePage() {
         {/* Hero Text Content */}
         <div className="hero-text text-center mx-auto max-w-xl p-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-semibold font-lora text-[#004686] mb-4">
-            We are Calvary YAEM!
+            We are
+            <span className="block sm:hidden"></span>{" "}
+            {/* Line break for smaller screens */}
+            Calvary YAEM!
           </h1>
           <p className="text-lg font-normal font-lora text-[#525252] mb-4">
-            Sundays 1PM &ensp;|&ensp; 572 Ryders Lane, East Brunswick, NJ
+            Sundays 1PM &ensp;|&ensp;
+            <span className="block sm:hidden"></span>{" "}
+            {/* Line break for smaller screens */}
+            572 Ryders Lane, East Brunswick, NJ
           </p>
           <div className="bg-[#FFFFFF80] rounded-xl px-4 py-2 mb-4 max-w-xs mx-auto">
             <p className="text-lg font-normal font-lora text-[#525252]">
@@ -123,10 +129,9 @@ function HomePage() {
           <h2 className="text-2xl font-semibold font-lora mt-4">
             Monthly Event
           </h2>
-          <p className="text-lg mt-2 font-lora">
-            Check out our monthly YAEM event calendar for
-            <br />
-            events, retreats and more!
+          <p className="text-lg mt-2 font-lora px-8">
+            Check out our monthly YAEM event calendar for events, retreats and
+            more!
           </p>
           <Link
             to="/events"
@@ -149,10 +154,9 @@ function HomePage() {
           <h2 className="text-2xl font-lora font-semibold mt-4">
             Prayer Meetings
           </h2>
-          <p className="text-lg mt-2 font-lora">
-            Join us for a time of prayer and reflection!
-            <br />
-            We meet in-person on select Fridays at 7pm.
+          <p className="text-lg mt-2 font-lora px-8">
+            Join us for a time of prayer and reflection! We meet in-person on
+            select Fridays at 7pm.
           </p>
           <Link
             to="/"

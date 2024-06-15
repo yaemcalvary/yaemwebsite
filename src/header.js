@@ -80,11 +80,17 @@ export default function Example() {
           <div className="flex items-center justify-between">
             <Link
               to="/"
-              className="flex items-center space-x-4"
+              className="flex items-center space-x-3"
               onClick={handleLinkClick}
             >
-              <img className="h-8 w-auto" src="/yaemlogo.png" alt="YAEM Logo" />
-              <span className="font-bold font-lora text-xl">Calvary YAEM</span>
+              <img
+                className="h-8 w-auto"
+                src="/yaemlogo2.png"
+                alt="YAEM Logo"
+              />
+              <span className="font-semibold font-lora text-2xl">
+                Calvary YAEM
+              </span>
             </Link>
             <button
               type="button"
