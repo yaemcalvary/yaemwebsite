@@ -183,14 +183,14 @@ function AboutPage() {
           <h2 className="text-4xl font-bold font-lora mb-4">The Team</h2>
         </div>
         <div className="container mx-auto">
-          <div className="flex flex-wrap justify-center -mx-1">
-            <div className="w-full md:w-1/2 lg:w-1/3 px-2 mb-8 flex justify-center">
+          <div className="flex flex-wrap justify-center -mx-1 sm:-mx-4 md:-mx-1">
+            <div className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 px-4 sm:px-8 md:px-2 mb-8 flex justify-center">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <img
                   src="/pastorpaul.png"
                   alt="Paul Baek"
-                  className="w-full h-auto"
-                  style={{ height: "450px", objectFit: "cover" }}
+                  className="w-full h-full object-cover sm:object-contain sm:object-top"
+                  style={{ height: "450px" }}
                 />
                 <div className="p-6 text-center flex-grow flex flex-col justify-between">
                   <div>
@@ -207,13 +207,13 @@ function AboutPage() {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 lg:w-1/3 px-2 mb-8 flex justify-center">
+            <div className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 px-4 sm:px-8 md:px-2 mb-8 flex justify-center">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <img
                   src="/joo.png"
                   alt="JooHyeng Lee"
-                  className="w-full h-auto"
-                  style={{ height: "450px", objectFit: "cover" }}
+                  className="w-full h-full object-cover sm:object-contain sm:object-top"
+                  style={{ height: "450px" }}
                 />
                 <div className="p-6 text-center flex-grow flex flex-col justify-between">
                   <div>

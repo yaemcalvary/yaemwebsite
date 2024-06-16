@@ -9,7 +9,10 @@ function NewHere() {
       <div className="bg-[#C3D0FF59] flex items-center justify-center py-32 px-10 sm:px-8 md:px-8 lg:px-10 xl:px-12">
         <div className="text-center">
           <h2 className="text-3xl font-semibold font-lora mb-4">
-            New here? Let us know!
+            New here?
+            <span className="block sm:hidden"></span>{" "}
+            {/* Line break for smaller screens */}
+            Let us know!
           </h2>
           <p className="text-lg font-normal font-lora max-w-lg mx-auto">
             We are looking forward to meeting you! Please fill out the
