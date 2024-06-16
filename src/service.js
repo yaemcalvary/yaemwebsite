@@ -38,7 +38,7 @@ function ServicePage() {
             <p className="text-lg mb-8 font-lora">
               Sundays 1:00pm
               <br />
-              572 Ryders Lane,
+              572 Ryders Lane<span className="sm:inline hidden">,</span>
               <span className="block sm:hidden"></span>{" "}
               {/* Line break for smaller screens */}
               East Brunswick, NJ 08816
@@ -71,6 +71,9 @@ function ServicePage() {
       {/* Image Carousel Section */}
       <div className="py-12">
         <div className="container mx-auto px-4">
+          <h2 className="text-2xl text-center font-bold font-lora mb-4">
+            Directions to Chapel
+          </h2>
           <div className="max-w-2xl mx-auto">
             <Carousel
               showThumbs={false}

@@ -136,7 +136,10 @@ function AboutPage() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-semibold font-lora mb-4">Our Values</h2>
           <p className="text-lg font-normal font-lora">
-            At Calvary YAEM, we believe in these seven values
+            At Calvary YAEM, we believe
+            <span className="block sm:hidden"></span>{" "}
+            {/* Line break for smaller screens */}
+            in these seven values
           </p>
         </div>
         <div className="container mx-auto">

@@ -11,8 +11,8 @@ function HomePage() {
       const width = window.innerWidth;
 
       if (width <= 480) {
-        bgImage.style.backgroundSize = "600%";
-        bgImage.style.backgroundPosition = "left 13% center";
+        bgImage.style.backgroundSize = "520%";
+        bgImage.style.backgroundPosition = "left 12% center";
       } else if (width <= 768) {
         bgImage.style.backgroundSize = "150%";
         bgImage.style.backgroundPosition = "left 25% center";
@@ -43,8 +43,8 @@ function HomePage() {
           id="backgroundImage"
           className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
-            backgroundImage: `url('/hero.png')`,
-            filter: "blur(0px) brightness(1.0) saturate(1.2)",
+            backgroundImage: `url('/hero3.jpg')`,
+            filter: "blur(0px) brightness(1.2) contrast(0.9) saturate(1.7)",
             zIndex: 1,
           }}
         ></div>
@@ -58,11 +58,11 @@ function HomePage() {
             Calvary YAEM!
           </h1>
           <p className="text-lg font-normal font-lora text-[#525252] mb-4">
-            Sundays 1PM &ensp;|&ensp;
-            <span className="block sm:hidden"></span>{" "}
-            {/* Line break for smaller screens */}
+            Sundays 1PM <span className="sm:inline hidden">&ensp;|&ensp;</span>
+            <span className="block sm:hidden"></span>
             572 Ryders Lane, East Brunswick, NJ
           </p>
+
           <div className="bg-[#FFFFFF80] rounded-xl px-4 py-2 mb-4 max-w-xs mx-auto">
             <p className="text-lg font-normal font-lora text-[#525252]">
               Growing in knowledge of God. <br /> Living in obedience to His
@@ -159,7 +159,7 @@ function HomePage() {
             select Fridays at 7pm.
           </p>
           <Link
-            to="/"
+            to="/events"
             className="bg-white hover:bg-[#004686] hover:text-white text-xl text-[#004686] font-bold font-lora py-2 px-4 rounded-lg inline-block mt-4 border-[#004686] border-solid border-2.5"
           >
             More Info
