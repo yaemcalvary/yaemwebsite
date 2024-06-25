@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./header";
 import Footer from "./footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -8,6 +7,7 @@ import EventsPage from "./events";
 import ServicePage from "./service";
 import SmallGroups from "./smallgroups";
 import ScrollToTop from "./ScrollToTop";
+import NotFoundPage from "./NotFound";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
             <Route path="/events" element={<EventsPage />} />
             <Route path="/service" element={<ServicePage />} />
             <Route path="/smallgroups" element={<SmallGroups />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
         <Footer />

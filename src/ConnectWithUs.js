@@ -26,7 +26,7 @@ function ConnectWithUs() {
 
         {/* Content */}
         <div className="relative text-center text-white px-6 sm:px-12 md:px-14">
-          <h2 className="text-3xl font-bold font-lora mb-4">
+          <h2 className="text-2xl font-semibold font-lora mb-4">
             Connect with us!
           </h2>
           <div className="max-w-lg mx-auto">

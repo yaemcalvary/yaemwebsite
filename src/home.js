@@ -129,7 +129,7 @@ function HomePage() {
           <h2 className="text-2xl font-semibold font-lora mt-4">
             Monthly Event
           </h2>
-          <p className="text-lg mt-2 font-lora px-8">
+          <p className="text-lg mt-2 font-nomral font-lora px-8">
             Check out our monthly YAEM event calendar for events, retreats and
             more!
           </p>
