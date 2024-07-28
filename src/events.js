@@ -29,9 +29,26 @@ function EventsPage() {
         <div className="container mx-auto text-center md:text-left px-8">
           <div className="flex justify-center">
             <div className="w-full md:w-4/5">
-              <h2 className="text-3xl md:text-4xl font-bold font-lora mb-4 text-center md:text-left">
-                Our Events
+              <div className="flex flex-col items-center justify-center w-100 p-6 mx-auto border border-gray-300 rounded-lg shadow-md">
+                <h1 className="text-3xl font-bold font-lora mb-4 text-center">
+                  Upcoming Events
+                </h1>
+                <p className="font-lora text-l mb-4 text-center">
+                  Join us for our monthly events by filling out the events
+                  google form!
+                </p>
+                <Link
+                  to="https://linktr.ee/yaemcalvary"
+                  target="_blank"
+                  className="font-lora font-semibold text-l px-5 py-3 bg-[#004686] text-white rounded hover:bg-blue-800"
+                >
+                  Sign Up
+                </Link>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold font-lora mb-4 pt-10 text-center md:text-left">
+                Our Calendar
               </h2>
+
               <div className="relative pb-[130%] sm:pb-[100%] h-0 overflow-hidden">
                 <iframe
                   src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York"

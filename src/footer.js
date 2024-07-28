@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 import "@fontsource/lora";
 import "@fontsource/source-serif-pro";
@@ -41,7 +42,12 @@ function Footer() {
             </span>
             {/* Instagram Icon */}
             <span className="h-5 w-5">
-              <img src="/instagram.svg" alt="instagram" className="h-5 w-5" />
+              <Link
+                to="https://www.instagram.com/calvary_yaem/"
+                target="_blank"
+              >
+                <img src="/instagram.svg" alt="instagram" className="h-5 w-5" />
+              </Link>
             </span>
           </div>
         </div>
